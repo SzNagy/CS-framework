@@ -1,0 +1,6 @@
+[submodule "CSClass/CSCore"]
+	path = CSClass/CSCore
+	url = https://github.com/DN-GSI/CSCore.git
+[submodule "CSlibraries-extern/DimLVEvent"]
+	path = CSlibraries-extern/DimLVEvent
+	url = https://github.com/HB-GSI/DimLVEvent.git
