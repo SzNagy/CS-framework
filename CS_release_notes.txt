@@ -1,0 +1,1219 @@
+Release Notes for the CS framework - 25-November-2010
+=================================================
+The control system  is mainly a collection of  classes.  These release
+notes  just concern  the software  that  is contained  in the  package
+"CSMain",    which    can     be    downloaded    from    SourceForge,
+https://sourceforge.net/projects/cs-framework/.    For  details  about
+classes        have       a        look       at        the       file
+"ROOTPATH\LV820\GPL\Projects\cs-framework\Classes.xls".    For  details
+about    other     packages    have    a    look     at    the    file
+"ROOTPATH\Packages\Packages.xls", which  is available via  the package
+"CSPackaging".
+
+Related documents and information
+=================================
+- CS_readme.txt
+- contact: d.beck@gsi.de or h.brand@gsi.de
+- Download, bug reports... : https://sourceforge.net/projects/cs-framework/
+- Documentation: http://wiki.gsi.de/cgi-bin/view/CSframework/WebHome
+
+
+Version 3.21
+============
+These release notes concern the changes when migrating from version 
+3.20 to version  3.21. Version  3.21 requires  LabVIEW  2009SP1 and
+is not supported for earlier versions of LabVIEW. 
+
+The package CSMain has been  developped  using LabVIEW 2009SP1 Full
+Development  system only. Other package than CSMain may  have other
+requirements. Check  the   package   documentation   for   detailed
+information.
+
+As a main and only change compared to version 3.20, VI templates are
+replaced by reentrant VI with preallocated clones.
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- see changelog
+
+2. Classes that have been added
+
+3. The following classes are moved to category "removed".
+
+5. The following classes may have unsolved problems
+
+6. The version number of the subversion repository is 6643
+
+
+Version 3.20
+============
+These release notes concern the changes when migrating from version 
+3.14 to version  3.20. Version  3.20 requires  LabVIEW  2009SP1 and
+is not supported for earlier versions of LabVIEW. 
+
+The package CSMain has been  developped  using LabVIEW 2009SP1 Full
+Development  system only. Other package than CSMain may  have other
+requirements. Check  the   package   documentation   for   detailed
+information.
+
+In prinicple, code developed with LV8.2.1 runs with LV2009SP1. Some
+minor things are changed, however. This concerns
+- using "shared clones" for reentrant VIs, where possible
+- using the "community mechanism" of LV2009, replacing the previously
+  introduced "is a frind?" methods
+- added a routine "get library version", so that it is possible to
+  query version numbers of classes and libraries during run-time.
+- all GUIs have a real menu with some help and about items
+
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- all
+
+2. Classes that have been added
+- CSPopUpMsgBox
+
+3. The following classes are moved to category "removed".
+
+5. The following classes may have unsolved problems
+
+6. The version number of the subversion repository is 6584
+
+Version 3.14
+============
+Just a maintenance release. The version number of the subversion repository
+is 5780.
+
+Version 3.13
+============
+These release notes concern the changes when migrating from version 
+3.12 to version  3.13. The version number of the subversion repository
+is 5319
+
+The  package  CSMain  has  been  developped  using  LabVIEW  8.21  Full
+Development  system only. Other  package than  CSMain   may  have other
+requirements.   Check   the   package   documentation   for   detailed
+information.
+
+This is a maintenance release, including all patches of version 3.12. 
+Moreover, all classes of category main (maintained by D.Beck) have
+been checked using the VI-Analyzer tool from NI. As a consequence, some
+routines or methods maybe more strict with respect to error handling or
+wiring through of data. Care was take for backward compatibility and no
+surpriese are expected. However, CS-users should check proper execution
+of their code.
+
+Version 3.12
+============
+These release notes concern the changes when migrating from version 
+3.11 to version  3.12.
+
+The  package  CSMain  has  been  developped  using  LabVIEW  8.21  Full
+Development  system only. Other  package than  CSMain   may  have other
+requirements.   Check   the   package   documentation   for   detailed
+information.
+
+The main difference to 3.12 is the introduction of menu bars and utilizing
+the "Close" button of a window for closing a panel. Moreover, some GUI
+classes have been added as "contributed" classes to the package CSMain
+to make its use more attractive. Also the following bugs have been 
+fixed:
+- SourceForge 1995805, 1986436 and 1986386.
+
+Version 3.12 runs on Linux and is basically a maintenance release
+incorporating all patches. Compared to version 3.10 there are only minor
+changes.
+
+Version 3.11
+============
+These release notes concern the changes when migrating from version 
+3.10 to version  3.11.
+
+The  package  CSMain  has  been  developped  using  LabVIEW  8.21  Full
+Development  system only. Other  package than  CSMain   may  have other
+requirements.   Check   the   package   documentation   for   detailed
+information.
+
+Version 3.11 runs on Linux and is basically a maintenance release
+incorporating all patches. Compared to version 3.10 there are only minor
+changes.
+
+
+Version 3.10
+============
+These release notes concern the changes when migrating from version 
+3.00 to version  3.10. Version  3.10 is the final step of the migration 
+from version 2.10 (LabVIEW 7.1) to the DIM based CS (LabVIEW 8.X). CS 
+3.10 requires LabVIEW 8.20 and is not supported for earlier versions 
+of LabVIEW. CS 3.10 should also run with LabVIEW 8.21 without changes.
+
+- can not support Linux since we have no LabVIEW 8.20 on that platform
+available. We hope to solve this problem in the future.
+- have a look at a migration How-To: 
+http://wiki.gsi.de/cgi-bin/view/CSframework/CS310Migration
+- have a look at the coding conventaions:
+http://wiki.gsi.de/cgi-bin/view/CSframework/CsCodingConventions
+- lots of formal changes compared to CS 3.00
+- some functionality added
+- now depending also on package utility lib
+- added a feature that objects loaded by the SuperProc during startup get 
+automatically their system names prefixed. This is an option that can be 
+configured in the database (Address0). 
+- the connector pane of the CLASSNAME.ProcCases method 
+has changed. The input "i ref" on the upper left connection is now 
+required.
+
+The  package  CSMain  has  been  developped  using  LabVIEW  8.20  Full
+Development  system only. Other  package than  CSMain   may  have other
+requirements.   Check   the   package   documentation   for   detailed
+information.
+
+!!!All classes need to be adjusted, better say "migrated", to 
+the new CS version. Classes of CS 3.10 can not be used with older
+CS versions. Classes of older versions can not be used with CS 3.10!!!
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- all
+
+2. Classes that have been added
+
+3. The following classes are moved to category "removed".
+
+5. The following classes may have unsolved problems
+
+Version 3.00
+============
+These release notes concern the changes when migrating from version 2.
+10d4  or earlier  to version  3.00. Version  3.00 is  a  major release
+introducing a number of changes. CS 3.00 requires LabVIEW 7.1 and is
+not supported for earlier or newer versions of LabVIEW. A release for
+LabVIEW 8.20 is planned for mid 2007.
+
+- switched to DIM (www.cern.ch/dim) as communication layer. This has 
+  fundamental consequences since it introduces the publisher-subscriber
+  pattern. Previous versions of CS only used the command pattern.
+- directory structure of sources changed.
+- introducing "class groups" like CSCore, CSAcquisition. These groups
+  categorize classes according to their functionality.
+- introducing "packaging". Each package is a  small piece of software
+  that may depend on other packages. A package should have a responsible
+  maintainer.
+- introducing "package categories"
+ -- "Main": everything that is vital to CS and CS can not be used without.
+ -- "Contributed": a package that is used by more than one user and that
+    has a well defined maintainer.
+ -- "User": a package that is a) used by more than one user but without
+    responsible maintainer or b) used by one user only but having a
+    responsible mainteiner.
+ -- "Deprecated": a package has only one user and no active maintainer 
+    or no user at all.
+ -- "Removed": a package has bee removed from CS and is now located
+    in a special folder "CSGraveyard".
+- switched to SubVersion as source code control system
+- introducing the "Domain Management System" for remote process control
+  and monitoring.
+- introducing the "CS Access System" for locking of (sub-)systems within
+  a control system.
+- introducing the "CSPackaging" system for management of packages.
+
+The  package  CSMain  has  been  developped  using  LabVIEW  7.1  Full
+Development  system only. Other  package than  CSMain, may  have other
+requirements.   Check   the   package   documentation   for   detailed
+information.
+
+!!!All classes need to be adjusted, better say "migrated", to 
+the new CS version. Classes of CS 3.00 can not be used with older
+CS versions.!!!
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- CSInterface.DSCIntProc: DSCTrend events removed, start/stop events 
+  removed. DSCIntProc class now links directly to DIM using the
+  publisher-subscriber pattern.
+- CSCore.SuperProc. New events CreateObject and DestroyObjects added. With
+  these methods, one can now use the SuperProc class as object factory for
+  all classes (no longer limited to BaseProcess- and child classes).
+- CSCore.CAEObj. 
+ -- new thread added that is required by the CS Access System.
+ -- event definition has changed
+ -- ...
+- CSCore.BaseProcess
+ -- event definition has changed
+ -- ...
+- ...
+
+
+2. Classes that have been added
+
+3. instrument  drivers that have  been changed  or added.
+
+4. Changes that require reinheritance for ALL child classes.
+
+5. The following classes are moved to category "removed".
+- CSGeneralClassGUI
+- DIMIntProc
+- QueueClient
+- QueueListener
+- QueueServer
+- ...
+
+6. The following classes may have unsolved problems
+
+Version 2.10d4
+==============
+
+These release notes concern the changes when upgrading from version 2.
+10  to version  2.10d4.  Here,  only those  things are  mentioned that
+require some action  by users of the CSxxx  packages. This version was
+developped  using  LabVIEW 7.1  (including  DSC  module 7.1,  database
+connectivity  toolset 1.0.132,  IVI  package 2.2,  IMAQ Vision  7.1.0,
+NI-488.2 driver  2.20, NI-CAN  driver 2.2f4, NI-DAQmx  driver 7.3.0f0,
+NI-DAQmxBase driver 1.4.0f2, NI-IMAQ driver 3.0.0, NI-IMAQ 1394 driver
+1.5.1,  NI-Scope driver  2.7.0f5, NI-Serial  driver 1.7.0  and NI-VISA
+driver  3.2). 
+
+The time  format used by the  CSObj class as well  as DIMIntProc class
+has been  changed from [ms] to  [s]. Old CS  installations can operate
+next to new  CS installataions, but the date shown will  be wrong by a
+factor of 1000.
+
+The CSSystem.CoreLib library has been reorganized. The most frequently
+used  function remain  in the  same place.  Other functions  have been
+moved to the sub-folder "internal" or "unused and historic".
+
+The error handling  has been changed. The "CoreLib.my  to LV error.vi"
+now  supports different severity  levels: information,  warning, error
+and fatal.  The  ranges for error numbers are  defined in the function
+"CoreLib.error  severity.vi". It  was  tried to  keep things  backward
+compatible  as much  as  possible. However,  some  behaviour may  have
+changed.   As an example,  the "LoadProcess"  method of  the SuperProc
+class no longer produces the "error" "process already exists" (in case
+a  process existed  already).  Instead  it produces  the "information"
+"process already  exists". Thus, code  that used the  error TRUE/FALSE
+information to decided for certain actions may have to be checked.  As
+another consequence, the alarm limits for error tags in the DSC engine
+have  been changed.   According to  the CoreLib.error  severiy.vi, the
+"good" range is now  from 8000(=information, noError) to 9000 (=error,
+noError).  Tags  with values  in that range  will show no  alarm. Tags
+outside  this  range  will  fire   an  alarm.   Have  a  look  at  the
+CS_TestTags.scf file coming with the distribution.
+
+SuperProc class: All methods support the "N/A" feature. Thus, they are
+not executed of the "process name" equals "N/A".
+
+DSCIntProc and DIMIntProc class. First, the "Notifier Bit" (previously
+called  the  "Event Bit")  of  the  data  transferred when  sending  a
+"Register" event  is now  considered.  In case  the "Notifier  bit" is
+TRUE, the observer will be  informed via notifiers, instead of message
+queues. Second, The  cluster "tag status" that is  sent to an observer
+has been  extended by  two fields: "flatdata"  and "data  type". "data
+type" is an enum describing the type of data. "flat data" contains the
+data flattened to a string.  This allows observers to register to data
+of  all types  and not  just "double".  The old  cluster  item "value"
+(which was of double type only) is kept for backward compatibility.
+
+GeneralObjectGUI. New (changed) tag  values are no longer received via
+the messae  queue but via  notifiers. When registering for  tags, this
+class no  longer registers to the  DSCInterface of THIS  object but to
+the DSCInterfaces of the objects THIS object is interested in.
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.      
+
+- CSCore.BaseProcess
+- CSCore.CAEObj 
+- CSCore.DIMIntProc 
+- CSCore.DSCIntProc
+- CSCore.NotifierObj 
+- CSCore.QueueServer
+- CSCore.SuperProc  
+- CSGui.GeneralObjectGUI
+- CSGui.GOGFrontPanel
+- CSGui.ObjectInspector
+- CSPowerSupply.GSI-HVSwitch2
+- CSRealTime.RTNodeMon
+
+- CSTools.DomainConsole (not a class but a utility)
+- CSSystem.CoreLib (not a class but a library)
+
+2. Classes that have been added
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.)
+
+4. Changes that require reinheritance for ALL child classes.
+
+5. The following classes are frozen since they are no longer used
+- CSCore.BaseProcessSM (replaced by BaseSM)
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+- CSIsoltrap.Variac
+- CSIsoltrap.CycleControl
+- CSIsoltrap.PressureControl
+- CSPHELIX.PIL
+- CSPHELIX.PILSM
+- CSGui.DelayGenGUI
+- CSGui.ScopeGUI
+- CSGui.WaveGenGUI
+- CSPowerSupply.MultiIO
+- CSPowerSupply.GAPSU
+
+6. The following classes may have unsolved problems
+
+Version 2.10
+============
+
+These release notes concern the changes when upgrading from version 2.
+00  to version  2.10.   Here,  only those  things  are mentioned  that
+require some action  by users of the CSxxx  packages. This version was
+developped  using  LabVIEW 7.1  (including  DSC  module 7.1,  database
+connectivity  toolset 1.0.132,  IVI  package 2.2,  IMAQ Vision  7.1.0,
+NI-488.2 driver  2.20, NI-CAN  driver 2.2f4, NI-DAQmx  driver 7.3.0f0,
+NI-DAQmxBase driver 1.4.0f2, NI-IMAQ driver 3.0.0, NI-IMAQ 1394 driver
+1.5.1,  NI-Scope driver  2.7.0f5, NI-Serial  driver 1.7.0  and NI-VISA
+driver  3.2).   This  is   the  first  release  supporting  Linux  and
+LabVIEW-RT.
+
+The QueueListener now checks  incoming connections, if they are coming
+from  an "allowed  node". "Allowed  nodes" can  be configured  via the
+database entry of the "Listener" object.
+
+The  QueueClient now  changes the  buffer size  of the  TCP  socket to
+enhance  transfer  speed.   This  must  be optimized  for  a  specific
+network. See database (QueueClient, Special2).
+
+The management of attribute data  was changed slightly for all classes
+in order to remove a bug that probably did not show up at all. In case
+of  problems   with  class  CLASSNAME,   please  compare  "CLASSNAME.i
+attribute.vi" with "BaseProcess.i attribute.vi".
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- CSAcquisitioin.NI5112
+- CSCore.BaseGUI
+- CSCore.BaseProcess
+- CSCore.BaseSM
+- CSCore.DIMIntProc
+- CSCore.DSCIntProc
+- CSCore.NotifierObj
+- CSCore.QueueClient
+- CSCore.QueueListener
+- CSCore.QueueServer
+- CSCore.SuperProc
+- CSDelayGate.MA202
+- CSDelayGate.PPG100
+- CSDelayGate.SimPPG
+- CSGames.4WinsClient
+- CSGui.GeneralObjectGUI
+- CSGui.GOGFrontPanel
+- CSGui.HVChannelGUI
+- CSGui.ObjectInspector
+- CSGui.Relays-Gui 
+- CSIsoltrap.MassMeas
+- CSIsoltrap.CommandServer
+- CSLebit.MM6
+- CSLebit.MrClean
+- CSPowerSupply.ProfibusPowerSupply
+- CSPowerSupply.FUG-HCN
+- CSRextrap.CycleControlRT
+
+- CSSystem.CoreLib (not a class but a library)
+- CSSystem.CSSystemLib (not a class but a library)
+
+- CSClassUtilities.EditClass (not a class but a utility)
+- CSClassUtilities.InheritClass (not a class but a utility)
+- CSClassUtilities.TestClass (not a class but a utility)
+- CSTools.CS SQL Server (not a class but a utility)
+- CSTools.DomainConsole (not a class but a utility)
+
+2. Classes  that   have  been  added
+- CSAcquisition.DAQbase_mIO_Scope
+- CSAcquisition.DAQ_E_mIO_Scope
+- CSAcquisition.Keithley485
+- CSAcquisition.LeCroy9314A
+- CSAcquisition.NI6602
+- CSGui.CSTestGUI
+- CSGui.DAQbase_mIO_AIOGUI
+- CSGui.DAQbase_mIO_CntrGUI
+- CSGui.DAQbase_mIO_DIOGUI
+- CSGui.DAQ_E_mIO_AIOGUI
+- CSGui.DAQ_E_mIO_CntrGUI
+- CSGui.DAQ_E_mIO_DIOGUI
+- CSGui.DAQbase_mIO_ScopeGUI
+- CSGui.DAQ_E_mIO_ScopeGUI 
+- CSGui.GSI-HVSwitch2GUI
+- CSGui.USBCamGUI
+- CSPowerSupply.DAQbase_mIO_AIO
+- CSPowerSupply.DAQbase_mIO_Cntr
+- CSPowerSupply.DAQbase_mIO_DIO
+- CSPowerSupply.DAQ_E_mIO_AIO
+- CSPowerSupply.DAQ_E_mIO_DIO
+- CSPowerSupply.GSI-HVSwitch2
+- CSVision.USBCam
+- CSRextrap.Xantrex
+- CSRextrap.KickerSteererBender
+- CSRextrap.QuadrupoleSteering
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.)
+- ma202
+- NI6602
+- Probus
+- DIM_LV
+- SDEX
+- hvSwitch2
+- PPG100
+
+4. Changes that require reinheritance for ALL child classes.
+
+5. The following classes are frozen since they are no longer used
+- CSCore.BaseProcessSM (replaced by BaseSM)
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+- CSIsoltrap.Variac
+- CSIsoltrap.CycleControl
+- CSIsoltrap.PressureControl
+- CSPHELIX.PIL
+- CSPHELIX.PILSM
+- CSGui.DelayGenGUI
+- CSGui.ScopeGUI
+- CSGui.WaveGenGUI
+- CSPowerSupply.MultiIO
+- CSPowerSupply.GAPSU
+
+6. The following classes may have unsolved problems
+- CSData.DataCollector
+- CSData.DiscArchiver
+-- CSVision.LPImage-GUI
+-- CSVision.LaserPicture
+-- CSVision.3DGraph
+- package CSPhelix
+
+Version 2.00
+============
+
+These release notes concern the changes when upgrading from version 1.
+20 to version  2.00.  Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages. This version was
+developped  using  LabVIEW   7.0f1  (including  the  DSC  module, the
+database connectivity toolset and IVI). ObjectVIEW is no longer used.
+This is a redesign of the CSCore!!!!
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.
+- CSAfg.HP3325B
+- CSAfg.IVIWaveGen
+- CSAcquisition.IVIOscilloscope
+- CSAcquisition.TekTD640
+- CSCore.BaseProcess
+- CSCore.CAEObj
+- CSCore.CoreDefs (library, not a class)
+- CSCore.CoreLib (library, not a class)
+- CSCore.CSSystem( (library, not a class)
+- CSCore.CSStart (VI, not a class)
+- CSCore.DSCIntProc
+- CSCore.NotifierObject
+- CSCore.QueueClient
+- CSCore.QueueListener
+- CSCore.QueueServer
+- CSCore.SuperProc
+- CSData.DiscArchiver
+- CSDelayGate.BNC555
+- CSDelayGate.IECMemory
+- CSDelayGate.SRDG424
+- CSGui.GeneralObjectGUI
+- CSGui.GOGFrontPanel
+- CSGui.ObjectInspector
+- CSInterface.CANDispatcher
+- CSIsoltrap.MassMeas
+- CSPowerSupply.FUG-HCN
+- CSPowerSupply.GAPSU
+
+
+2. Classes  that   have  been  added
+- CSAcquisition.AD405ADC (LEBIT power supplies)
+- CSAcquisition.TDS224 (Tektronix scope)
+- CSCore.BaseSM (state machines)
+- CSCore.CSObj (Very basic base class)
+- CSCore.DIMIntProc (uses DIM instead of LabVIEW DSC)
+- CSDelayGate.MA202 (pulsed pattern generator used by LEBIT)
+- CSCelayGate.SimTG (simulation of MA202)
+- CSGui.GeneralObjectGUI.HVChannelGUI (special front panel for iseg)
+- CSIsoltrap.NewCycleControl (new cycle controller for ISOLTRAP)
+- CSLebit.MM6 (sequencer of LEBIT)
+- CSPowerSupply.AD405DAC (LEBIT power supplies)
+- CSPowerSupply.DAQ_E_mIO (NI E Series DAQ card)
+- CSPowerSupply.DAQ_E_mIO_Cntr (counter for NI E Series DAQ card)
+- CSRextrap.CycleControlRT (cycle control for REXTRAP)
+- CSVision.3DGraph (PHELIX stuff)
+- CSVision.LaserPicture (PHELIX stuff)
+- CSVision.LPCyclicTable (PHELIX stuff)
+- CSVision.LPImage-GUI (PHELIX stuff)
+- CSVision.LPIntensityGraph (PHELIX stuff)
+- CSVision.LPLineGraph (PHELIX stuff)
+- CSVision.Table (PHELIX stuff)
+- CSMotion.NF87XX (piezo powered mirror adjuster)
+
+New Tools:
+- CSClassUtilities.EditClass (replaces ObjectVIEW class manager)
+- CSClassUtilities.InheritClass (replaces ObjectVIEW CIT)
+- CSClassUtilities.TestClass (general test and debug tool for classes)
+
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.)
+- LV_DIM  (DIM driver)
+- SharedMem (global and shared memory driver)
+- TDS224 (Tektronix scope)
+- ma202 (pattern generator used by LEBIT)
+
+
+4. Changes that require reinheritance for ALL child classes.
+The complete Core of the CS framework has been rewritten. This requires
+changing all classes. Most importantly, all classes have to provide a 
+constructor and a desctructor. Attribute data is no longer stored on
+front panels but in so-called functional global variables. 
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcEvents,   ProcCases, ProcPeriodic and the i attribute.ctl. Also,  
+put  back  the  methods  you  have  created  or overloaded in that 
+class. Adjust the constructor and destructor methods.
+
+5. The following classes are frozen since they are no longer used
+- CSCore.BaseProcessSM (replaced by BaseSM)
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+- CSIsoltrap.Variac
+- CSIsoltrap.CycleControl
+- CSIsoltrap.PressureControl
+- CSPHELIX.PIL
+- CSPHELIX.PILSM
+- CSGui.DelayGenGUI
+- CSGui.ScopeGUI
+- CSGui.WaveGenGUI
+- CSPowerSupply.MultiIO
+
+
+6. The following classes may have unsolved problems
+
+
+Version 1.20
+============
+
+These release notes concern the changes when upgrading from version 1.
+11 to version  1.20.  Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW   7.0     (including  the  DSC  module, the
+database connectivity toolset and IVI) and ObjectVIEW (CIT 2.3).
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.   
+-  all classes maintained by D. Beck: documentation extended
+-  CSAcquisition.SimMCS
+-  CSGUI.GOGFrontPanel
+-  CSPowerSupply.ProfibusPowerSupply (debugged, tuned)
+-  CSPowerSupply.FUG-HCN (new version)
+-  CSIsoltrap.CycleControl (debugged)
+-  CSIsoltrap.MassMeas (debugged)
+-  CSIsoltrap.CommandServer (debugged)
+-  CSAfg.DS345 (changed)
+-  CSCore.DSCIntProc
+-  CSCore.CAEObj (changed to new LabVIEW queues, tuned)
+-  CSCore.BaseProcess (changed to new LabVIEw queues, tuned)
+-  CSCore.QueueServer (changed to new LAbVIEW queues)
+-  CSCore.SQLServer (ported to LV7)
+
+2. Classes  that   have  been  added
+-  CSMotion.Trinamic-Controller (SixPack step motor controller from Trinamics)
+-  CSMotion.Trinamic-Axis (axis of a SixPack step motor controller)
+-  CSAcquisition.TekTDs640 (Scope TDS640 from Tektronics)
+-  CSDelayGate.SRDG545 (Delay Gate from Stanford Research)
+-  CSDelayGate.BNC555 (Berkeley Nucleonics delay gate)
+-  CSIsoltrap.VariacDB (new version of ion source heater class)
+-  CSPowerSupply.GAPSU (Generel Atomics Power Supply Unit)
+-  CSPowerSupply.AnalogDevice (regulates the input voltage such, that a proper output voltage is reached)
+-  CSAfg.IVIWaveGen (IVI function generators)
+-  CSAfg.AG33250A (AG33250A from Agilent)
+-  CSAfg.SML01 (SML01 from Rhode & Schwarz)
+-  CSGui.IVIWaveGen-Gui (GUI for IVI function generators)
+-  CSGUI.Trinamic-Gui (GUI for SixPack step motor controls)
+-  CSGui.Relay-GUI (GUI for relais connected via Profibus)
+-  CSGui.Scope-Gui (GUI for Oscilloscopes)
+-  CSGui-DelayGen-Gui (GUI for delay gate generators)
+-  CSVision.Analyzer-GUI (vision stuff for PHELIX)
+-  CSVision.ImageOperator (vision stuff for PHELIX)
+-  CSVision.ImageViewer (vision stuff for PHELIX)
+-  CSVision.IMAQ1394 (firewire cameras)
+-  CSVision.IMAQ1394-Gui (GUI for firewire cameras)
+-  CSVision.LPImage-GUI (vision stuff for PHELIX)
+-  CSPHELIX.PIL (PHELIX interlock system)
+-  CSPHELIX.PILSM (state machine of PIL)
+
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.)
+-  Probus (new version)
+-  DS345
+-  GPIB_Memory
+
+
+4. Changes that require reinheritance for ALL child classes.
+- None! :-)
+
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. The following classes are frozen since they are no longer used
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+- CSIsoltrap.Variac
+
+6. The following classes may have unsolved problems
+- CSAcquisition.IVIOscilloscope may be broken.
+- CSAcquisition.TekTDS640
+- CSAcquisition.SR430 (slope of trigger might be set wrong)
+- CSAfg.IVIWaveGen (being tested)
+- CSIsoltrap.PressureControl
+- CSPowerSupply.MultiIO (This class certainly has unsolved problems.
+  it is unfinished. Existing methods have not been tested. In the 
+  original form, it was not even executable. Several severe logical
+  bugs exist as well. It is just part for )
+- CSPowerSupply.Variac (replaced by CSPowerSupply.VariacDB
+- CSPowerSupply.EHQFXXX (status bits for connection to controller not updated) 
+- CSMotion.Trinamic-Axis (being changed)
+- CSMotion.Trinamic-Controller (being changed)
+- CSVacuum.PressureControl (replaced by CSPowerSupply.AnalogDevice)
+- CSGui.Scope-Gui (being tested)
+- CSGui.WaveGen-GUI
+- CSVision package (being upgraded to LV7.0 tested)
+  Comment: presently, this package is excluded from the distribution since
+  a few classes are broken 
+- CSDelayGate.BNC555 (being tested)
+- CSDElayGate.SRDG535 (being tested)
+
+
+
+
+Version 1.11
+============
+
+These release notes concern the changes when upgrading from version 1.
+10 to version  1.11.   Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW  6.1  (including  the DSC  module, the
+database connectivity toolset and IVI) and ObjectVIEW (CIT 2.12).
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.   
+-  all classes maintained by D. Beck: documentation extended
+-  CSCore.DSCIntProc
+-  CSCore.NotifierObj
+-  CSCore.SuperProc
+-  CSCore.QueueClient, important: send timeout of QueueClient must be shorter
+-  CSCore.QueueServer             than read timeout of QueueServer
+-  CSCore.GSI-HVSwitch
+-  CSGUI.GOGFrontPanel
+-  CSGUI.GeneralObjectGUI
+-  CSGUI.ObjectInspector
+-  CSVacuum.RVC300
+-  CSDelayGate.PPG100
+-  CSIsoltrap.XXX: all classes>Window Appearance of object.vit>
+                               Show Front Panel When Called!!!
+-  CSCore.CS General Class GUI
+
+2. Classes  that   have  been  added
+-  CSPowerSupply.EHQF010Sim (simulates an EHQF010 device on the CAN bus)
+-  CSPowerSupply.EHFFXXX (CAN deive class for iseg EHQFXXX power supplies)
+-  CSInterface.CANDispatcher (interface between CAN device classes and 
+                              CAN driver)
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.)
+-  Probus (documentation changed)
+-  RVC300
+
+4. Changes that require reinheritance for ALL child classes.
+-  For the first time: none! YEAH....
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. The following classes are frozen since they are no longer used
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+
+6. The following classes may have unsolved problems
+- CSAcquisition.IVIOscilloscope may be broken.
+- CSIsoltrap.PressureControl
+
+
+Version 1.10
+=============
+
+These release notes concern the changes when upgrading from version 1.
+02d to version  1.10.   Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW  6.1  (including  the DSC  module  and  the
+database connectivity toolset) and ObjectVIEW (CIT 2.12).
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.   
+-  CSCore.BaseProcess
+-  CSCore.SuperProc
+-  CSCore.DSCIntProc 
+-  CSCore.CoreLib
+-  CSCore.CAEObj
+-  CSCore.QueueClientSM
+-  CSCore.QueueServerSM
+-  CSCore.QueueClient
+-  CSCore.QueueServer
+-  CSCore.QueueListener
+-  CSAfg.DS345 (new tags objectname_frequency and objectname_amplitude)
+-  CSAFG.SimDS345 ("-")
+
+2. Classes  that   have  been  added
+-  CSAfg.SimDS345 (simulates a DS345 from Stanford Research)
+-  CSAfg.HP3325B (AFG HP3325B)
+-  CSPowerSupply.HP6629A (Agilent power supply)
+-  CSGui.GeneralObjectGUI (allows handling of static parameters)
+-  CSGui.GOGFrontPanel (general front panel for methods)
+-  CSGui.ObjectInspector (simple tool to view and kill instances)
+-  CSSystem.CSSystemLib (allows the building of runtime Systems)
+-  CSSystem.CSReplacement (allows the building of Runtime systems)
+-  CSDelayGate.DF94011 (self built delay gate unit)
+-  CSDelayGate.IECMemory (self built pattern generator)
+-  CSDelayGate.QC9310 ("Quantum Composer" delay gate unit)
+-  CSIsoltrap.CleanHandler (uses DS345s to do sideband free excication of ions)
+-  CSIsoltrap.SimCycleControl (simulates a cycle controller without using hardware)
+-  CSIsoltrap.VaraicControl (controls a Variac power supply)
+-  CSPowerSupply.FUG-HCN (???)
+-  CSPowerSupply.ProfibusPowersupply (Handles powersupplies that are 
+   controlled via analog voltages from the Profibus)
+-  CSPowerSupply.GSI-HVSwitch (6 channel fast switchable power supply)
+-  CSVacuum.PressureControl (???)
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.
+-  Agilent6629A
+-  PPG100
+-  HP3325B
+-  Parallel Port FH
+-  GPIB Memory
+-  Probus
+-  DF94011
+-  QC93011
+
+4. Changes that require reinheritance for ALL child classes.
+-  CSCore.BaseProcessSM (reinheritance required for children of this 
+                         class only)
+
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. The following classes are frozen since they are no longer used
+- CSShiptrap.CentralProcess
+- CSShiptrap.CentralProcessSM
+
+
+Version 1.02
+=============
+
+These release notes concern the changes when upgrading from version 1.
+01 to version  1.02.    Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW  6.1  (including  the DSC  module  and  the
+database connectivity toolset) and ObjectVIEW (CIT 2.12).
+
+1. Classes that have  been changed. These are changes  that require no
+   other  changes  than  just   putting  the  software  in  the  right
+   directory.   
+
+2. Classes  that   have  been  added   
+-  CSCore.NotifierObj  (enables CS-private multiwait with notifiers)
+-  CSCore.CAEObj (replaces EvtObj class of ObjectVIEW)
+-  CSCore.QueueListener (listens for other nodes that want to connect)
+-  CSIsoltrap.CommandServer (allows connection to ISOLTRAP's C++ GUI)
+-  CSIsoltrap.CycleControl (ISOLTRAP specific)
+-  CSIsoltrap.MassMeas (sequencer of ISOLTRAP)
+-  CSShiptrap.CycleControlST (SHIPTRAP specific)
+-  CSVacuum.RVC300 (class for RVC300 from Pfeiffer)
+
+not a class but a tool
+-  CSCore.CS SQL Server.llb. Can be used to build the application that
+   is found in the Class/CS SQL Server directory. That application can
+   be started and be used to retrieve data of the database via TCP. In
+   that case the CSCore.Corelib.use SQL server.vi should be changed to 
+   deliver TRUE. The main advantage is, that users of the CS framework
+   do not need to install the SQL toolkit.
+
+3. instrument  drivers that have  been changed  or added  (note: these
+   instrument drivers are not part of CS but available for download at
+   http://labview.gsi.de/driver.htm.
+-  SR430
+-  RVC300
+-  PPG100
+
+4. Changes that require reinheritance for ALL child classes.
+- CSCore.BaseProcess 
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. Other changes
+
+The "BaseProcess.evt create" method  now supports notifiers within the
+CS framework _without_ using the multiwait of ObjectVIEW (e.g. use OET
+communication  ==   FALSE).  For  each  object  an   instance  of  the
+NotifierObj  class is created.   That class  provides notifiers.  If a
+notifier has been received by a NotifierObj, the data is stored in the
+NotifierObj and it sends an event  via the message queue to the object
+where the notification  event has been defined. That  object will then
+obtain the  most recent  data from the  NotifierObj via  a synchronous
+method call.
+
+Connecting to other nodes is now done via a Listener. Node mynode has
+a listener. When a remote node wants to connect, it first queries the
+listener on for a TCP port. The listener finds out an unused TCP port 
+on node mynode. The listenter then start a QueueServer on mynode that
+listens on the TCP port and returns the TCP port to the remote node.
+The remote node then starts a QueueClient that connects to the
+QueueServer on mynode on the TCP port.
+
+The following methods are now called via virtual function calls.
+- Classname.activate (containg Classname.ProcConstructor and 
+  Classname.ProcEvents)
+- Classname.ProcPeriodic
+- Classname.ProcCases
+- Classname.deactivate (containg Classname.ProcDestructor)
+These methods must exist for children of the BaseProcess class.
+
+A new class CSCore.CAEObj has been created. It replaces the 
+System.EvtObj class when CoreLib.use OET communication yields FALSE.
+
+
+Version 1.01
+============
+
+These release notes concern the changes when upgrading from version 1.
+00  to version  1.01.  Here,  only  those things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW  6.1  (including  the DSC  module  and  the
+database connectivity toolset) and ObjectVIEW (CIT 2.12).
+
+1. Classes that have been changed. These are  changes  that  require no 
+   other changes than just putting the software in the right directory.
+   - CSCore.BaseProcess
+   - CSCore.DSCIntProc
+   - CSCore.SuperProc
+   - CSCore.CoreLib
+   - CSCore.CoreDefs
+   - CSAcquisition.IVIOscilloscope
+   - CSMotion.IEF-GUI
+   - CSMotion.IEF-Axis
+   - CSMotion.IEF-Controller
+
+2. Classes that have been added
+
+3. instrument drivers that have been changed or added (note: these 
+   instrument drivers are not part of CS but available for download
+   at http://labview.gsi.de/driver.htm.
+   - IEF-pac (instrument driver for IEF-Controller)
+
+4. Changes that require reinheritance for ALL child classes.
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. Other changes
+
+The  multi-wait  from  ObjectVIEW   can  be  disabled  in  the  method
+"CSCore.CoreLib.use  OET  communication".  In  that  case  the  method
+"BaseProcess.wait call" checks, if an event received is enabled by the
+object.
+
+The "BaseProcess.evt create" method now supports trends of the LabVIEW
+DSC  tag   engine.  An  observer   can  register  to   the  DSCIntProc
+class. Then,  the DSCIntProc will send  an event to  the observer each
+time  the  value   of  the  tag  specified  changes.   For  this,  the
+"BaseProcss.evt create"  method creates  a message queue  event within
+the object. See "BaseProcess.evt create" for more details.
+
+
+Version 1.00
+============
+
+These release notes concern the changes when upgrading from version 0.
+03 to version 1.0.  Here, only those things are mentioned that require
+some  action  by  users  of  the CSxxx  packages.   This  version  was
+developped  using  LabVIEW  6.1  (including  the DSC  module  and  the
+database connectivity toolset) and ObjectVIEW (CIT 2.12).
+
+1. Classes that have been changed. These are  changes  that  require no 
+   other changes than just putting the software in the right directory.
+   - CSCore.QueueClient
+   - CSAcquisition.IVIOscilloscope
+   - CSAcquisition.CountScope
+   - CSAcquisition.SimMCS
+   - CSAcquisition.SR430
+   - CSCore.SuperProc
+   - CSCore.DSCIntProc
+
+2. Classes that have been added
+   - CSData.DataCollector
+   - CSData.DiscArchiver
+
+3. instrument drivers that have been changed or added (note: these 
+   instrument drivers are not part of CS but available for download
+   at http://labview.gsi.de/driver.htm.
+   - IEF_pac (
+
+4. Changes that require reinheritance for ALL child classes.
+   - CSCore.BaseProcess (The methods acquire, release  have been removed
+        for all child classes. All child classes should  use the acquire 
+        and release method of the BaseProcess class. As a    consequence
+        all methods of ALL clients that use a acquire and release method
+        have to be changed. The acquire and release method of each class
+        must be deleted.
+   - CSCore.BaseProcessSM (like CSCore.BaseProcess)
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded in that class.  Edit the privat.llb/object.vit method.  Put
+back  the Classname/private.llb/i  attribute.ctl onto  the frontpanel.
+That's it. It takes about 10 minutes per class.
+
+5. Other changes
+
+Version 0.03
+============
+
+These release notes concern the changes when upgrading from version 0.
+02  to version  0.03.   Here,  only those  things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using  LabVIEW  6.1  (including  the DSC  module  and  the
+database connectivity toolset) and ObjectVIEW (CIT 2.12). Version 0.03
+has undergone  a major change,  since the state  machine functionality
+has  been   removed  from   the  BaseProcess  class   for  performance
+reasons. If  one would  like to  use state machines,  one can  use the
+BaseProcessSM   class    that   is   the   base    class   for   state
+machines.  Moreover,  the  Classname.object.vit  templates  have  been
+simplified drastically.
+
+1. Classes that have been changed. These are  changes  that  require no 
+   other changes than just putting the software in the right directory.
+   - CSCore.CoreLib.llb (not a class, just a library)
+   - CSCore.CS General Class GUI.llb (not a class, just a library)
+   - CSShiptrap.CentralProcess
+   - CSAcquisition.IVIOscilloscope (has been moved to package CSAcquisition)
+   - CSAcquisition.SR430 (change of data base for method init required)
+
+
+2. Classes that have been added
+   - CSAcquisition.CountScope       (use IVI Scope as MultiChannelScaler)
+   - CSDelayGate.SimPPG             (simulates a PPG100)
+   - CSAcquisition.SimMCS           (simulates a MCS)
+   - CSCore.BaseProcessSM           (template for implementing state machines)
+   - CSCore.QueueClientSM           (state machine of the QueueClient class)
+   - CSCore.QueueServerSM           (state machine of the QueueServer class)
+   - CSShiptrap.CentralProcessSM    (state machien of the CentralPrc. class)
+
+3. instrument drivers that have been changed or added (note: these 
+   instrument drivers are not part of CS but available for download
+   at http://labview.gsi.de/driver.htm.
+
+4. Changes that require reinheritance for ALL child classes.
+   - CSCore.BaseProcess
+   - CSCore.BaseProcessSM (only for state machines)
+   - CSCore.DSCIntProc
+
+Cooking  recipe for  reinheriting.   Backup your  class.  Delete  your
+class.   Reinherit  your  class.    Put  back  the  following  methods
+ProcConstructor,    ProcDesctructor,    ProcEvents,   ProcCases    and
+ProcPeriodic.   Also,  put  back  the  methods  you  have  created  or
+overloaded  in  that  class.   In  the  private.llb  edit  the  method
+ProcCases.   In the default  case, remove  everything and  include the
+BaseProcess.ProcCases method.   Edit the privat.llb/object.vit method.
+Put   back   the   Classname/private.llb/i  attribute.ctl   onto   the
+frontpanel.  That's it. It takes about 10 minutes per class. Note that
+your class is now much smaller.
+   
+
+5. Other changes
+   - CSCore\CoreLib.system start.vi has been moved to CS_Start.vi in the
+     Class directory.
+
+
+Version 0.02
+=============
+
+These release notes concern the changes when upgrading from version 0.
+01  to version  0.02.  Here,  only those  things  are mentioned  that
+require some action by users  of the CSxxx packages.  This version was
+developped  using   LabVIEW  6.02  (including  the   DSC  module)  and
+ObjectVIEW (CIT 2.10) (including the patch from April 25, 2002).
+
+1. Classes that have been changed. These are  changes  that  require no 
+   other changes than just putting the software in the right directory.
+   - CSCore.CoreLib.llb (not a class, just a library)
+   - CSCore.CoreDefs.llb (not a class, just a library)
+   - CSCore.CS General Class GUI (not a class, just a library)
+   - CSMotion.IEF-GUI
+   - CSAfg.DS345
+   - CSCore.SuperProc (note: requires change of process data base. Name of 
+     process data base is now "Interface0". Startup of SuperProc changed. 
+     The names of the processes that should be started when SuperProc 
+     starts are now in the DataBase (Special0-SpecialN).
+
+2. Classes that have been added
+   - CSCore.QueueServer (allows receiving of calls from remote PC)
+   - CSCore.QueueClient (sends calls to remote PC)
+   - CSDelayGate.PPG100        (pulsed pattern generator PPG100)
+   - CSOsci.IVIOscilloscope    (IVIScope, requires IVI from NI)
+   - CSAcquisition.SR430       (MultiChannelScaler SR430)
+   - CSShiptrap.CentralProcess (SHIPTRAP specific)
+   - CSShiptrap.ShipLib.llb/ShipLib.control gui.vi (not a class, just a GUI)
+
+3. instrument drivers that have been changed or added (note: these 
+   instrument drivers are not part of CS but available for download
+   at http://labview.gsi.de/driver.htm.
+   - DS345
+   - PPG100
+   - SR430
+
+4. Changes that require reinheritance for ALL child classes.
+   - CSCore.BaseProcess (Methods "activate" and "deactivate" changed)
+   - CSCore.BaseProcess (Method "get data to modify" changed)
+   - CSCore.BaseProcess (Method "set state error" changed), see BugNr. 3
+
+5. Change of data base The database has been changed in two
+   ways. First entering new data has become much simpler. Normal users
+   just have to edit the "Edit Instance Data" form to edit data of
+   instances and the "Edit Class Data" form in case they have created
+   a new class. Second, some entries in the data base that were named
+   by "Name" have been renamed to e.g. "AttributeName". As a result,
+   the CoreLib.sql read.vi had to be changed, which is part of this
+   release as well. The only action required is to merge your database
+   with into the new database.
+
+ 
+
+
+Version 0.01
+============
+
+These release notes concern the changes when upgrading from version 0.
+0 to version 0.01. Here,  only those things are mentioned that require
+some  action  by  users  of  the CSxxx  packages.   This  version  was
+developped  using   LabVIEW  6.02  (including  the   DSC  module)  and
+ObjectVIEW (CIT 2.05).
+
+
+1. The following methods  of the BaseClass have been  changed/added and must
+   be reinherited for daughter classes.
+
+   - Classname.add descriptors.vi    (changed)
+   - Classname.test.vi               (changed)
+   - Classname.object.vit            (changed)
+   - Classname.get pdc watchdog.vi   (changed)
+   - Classname.op read.vit           (changed)
+   - Classname.ProcConstructor       (added)
+   - Classname.ProcDestructor        (added)
+
+Important: All read / get methods must be changed according to the new 
+op read.vit. The release must not be done, if the "get data to modify" 
+timed out.
+
+2. The directory  structure has  changed.  The following  structure is
+ used and  placed in the "Class"  directory and on  the same hierarchy
+ level  as the  "System"  directory.  The  contents  are indicated  in
+ brackets.
+
+  - CSCore (BaseProcess, SuperProc,  DSCIntProc) 
+  - CSAfg (DS345) 
+  - CSMotion (IEF-Controller, IEF-Axis) 
+  - CSVision (empty)
+
+3. Change in filenames. The following has been changed
+
+  - Projlib.llb  has been  changed  CoreLib.llb. All  VIs inside  the
+    CoreLib have been changed from Projlib.viname.vi to CoreLib.viname.vi
+  - Defs.llb has been changed  to CoreDefs.llb. All controls inside the
+    CoreDefs.llb   have  been   changed   from  Defs.controlname.ctl   to
+    CoreDefs.controlname.ctl.
+
+5. New classes. The following classes have been added
+
+  - DS345  (a  very  simple  rudimentary  test class  for  the  DS345
+    function generator from Stanford Research)
+  - IEF-Controller (class for a PA-Control  from IEF-Werner)  
+  - IEF-Axis (class  for a axis  that is linked to a IEF-Controller)
+
+6. New tools.
+
+Error Logger: The error logger is a ment for testing purposes. It logs
+errors that show up during calls.  To use the error logger you have to
+change            a           boolean            constant           in
+CSCore/BaseProcess.public.llb/BaseProcess.call  process.vi.  The error
+logger can be found in CSCore/CoreLib.llb/CoreLib.error logger.vi.
+
+General  Class  GUI:  There  is  general GUI  for  communicating  with
+instances of classes. The General  Class GUi can be found in CSCore/CS
+General Class GUI.llb.
+
+System Start: This can be used  to start the system (Super process and
+DSC    interface   process).    This    tool   can    be   found    in
+CSCore/CoreLib.llb/CoreLib.system start.vi.
+
+
+
+
+
+
+
