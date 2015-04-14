@@ -4,3 +4,90 @@
 [submodule "CSlibraries-extern/DimLVEvent"]
 	path = CSlibraries-extern/DimLVEvent
 	url = https://github.com/HB-GSI/DimLVEvent.git
+[submodule "CSClass/CSPowerSupply"]
+	path = CSClass/CSPowerSupply
+	url = https://github.com/DN-GSI/CSPowerSupply.git
+[submodule "CSlibraries-extern/HGF"]
+	path = CSlibraries-extern/HGF
+	url = https://github.com/DN-GSI/HGF.git
+[submodule "CSinstr.lib/SDEX"]
+	path = CSinstr.lib/SDEX
+	url = https://github.com/DN-GSI/SDEX.git
+[submodule "CSinstr.lib/hvSwitch2"]
+	path = CSinstr.lib/hvSwitch2
+	url = https://github.com/DN-GSI/hvSwitch2.git
+[submodule "CSinstr.lib/GENser"]
+	path = CSinstr.lib/GENser
+	url = D:\\GitTestRepro\\GENser
+[submodule "CSinstr.lib/SE_HV_Driver"]
+	path = CSinstr.lib/SE_HV_Driver
+	url = D:\\GitTestRepro\\SE_HV_Driver
+[submodule "CSinstr.lib/SR430"]
+	path = CSinstr.lib/SR430
+	url = https://github.com/DN-GSI/SR430.git
+[submodule "CSinstr.lib/KE6485"]
+	path = CSinstr.lib/KE6485
+	url = https://github.com/DN-GSI/KE6485.git
+[submodule "CSinstr.lib/KE6514"]
+	path = CSinstr.lib/KE6514
+	url = https://github.com/DN-GSI/KE6514.git
+[submodule "CSinstr.lib/NI-FPGA-MCS"]
+	path = CSinstr.lib/NI-FPGA-MCS
+	url = https://github.com/DN-GSI/NI-FPGA-MCS.git
+[submodule "CSinstr.lib/Agilent 33xxx Series"]
+	path = CSinstr.lib/Agilent 33xxx Series
+	url = D:\\GitTestRepro\\Agilent 33xxx Series
+[submodule "CSinstr.lib/Agilent 3352X Series"]
+	path = CSinstr.lib/Agilent 3352X Series
+	url = D:\\GitTestRepro\\Agilent 3352X Series
+[submodule "CSClass/CSAfg"]
+	path = CSClass/CSAfg
+	url = https://github.com/DN-GSI/CSAfg.git
+[submodule "CSClass/CSDigitalIO"]
+	path = CSClass/CSDigitalIO
+	url = https://github.com/DN-GSI/CSDigitalIO.git
+[submodule "CSClass/CSLebit"]
+	path = CSClass/CSLebit
+	url = https://github.com/DN-GSI/CSLebit.git
+[submodule "CSinstr.lib/M&M"]
+	path = CSinstr.lib/M&M
+	url = D:\\GitTestRepro\\M&M
+[submodule "CSinstr.lib/NanotecSMCPD"]
+	path = CSinstr.lib/NanotecSMCPD
+	url = https://github.com/DN-GSI/NanotecSMCPD.git
+[submodule "CSinstr.lib/FH55"]
+	path = CSinstr.lib/FH55
+	url = https://github.com/DN-GSI/FH55.git
+[submodule "CSinstr.lib/SMSMagnetDriver"]
+	path = CSinstr.lib/SMSMagnetDriver
+	url = D:\\GitTestRepro\\SMSMagnetDriver
+[submodule "CSClass/CSHitrap"]
+	path = CSClass/CSHitrap
+	url = https://github.com/DN-GSI/CSHitrap.git
+[submodule "CSClass/CSMotion"]
+	path = CSClass/CSMotion
+	url = https://github.com/DN-GSI/CSMotion.git
+[submodule "CSinstr.lib/FH_55"]
+	path = CSinstr.lib/FH_55
+	url = https://github.com/DN-GSI/FH_55.git
+[submodule "CSClass/CSVision"]
+	path = CSClass/CSVision
+	url = https://github.com/DN-GSI/CSVision.git
+[submodule "CSClass/CSPentatrap"]
+	path = CSClass/CSPentatrap
+	url = https://github.com/DN-GSI/CSPentatrap.git
+[submodule "CSClass/CSIsoltrap"]
+	path = CSClass/CSIsoltrap
+	url = https://github.com/DN-GSI/CSIsoltrap.git
+[submodule "CSinstr.lib/WatchDog"]
+	path = CSinstr.lib/WatchDog
+	url = https://github.com/DN-GSI/WatchDog.git
+[submodule "CSinstr.lib/NI-FPGA-PPG"]
+	path = CSinstr.lib/NI-FPGA-PPG
+	url = https://github.com/DN-GSI/NI-FPGA-PPG.git
+[submodule "CSinstr.lib/ACC_LabVIEW_Interface"]
+	path = CSinstr.lib/ACC_LabVIEW_Interface
+	url = https://github.com/DN-GSI/ACC_LabVIEW_Interface.git
+[submodule "CSClass/CSInterface"]
+	path = CSClass/CSInterface
+	url = https://github.com/DN-GSI/CSInterface.git

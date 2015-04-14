@@ -83,25 +83,10 @@ Last update: 20-Mar-2013</Property>
 	<Property Name="varPersistentID:{7BEBB81F-396B-47F8-9632-50871F53948A}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage_CHANNEL6</Property>
 	<Property Name="varPersistentID:{7EC7B735-1AAB-41A3-A307-4676EE4E4442}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimAFG.lvlib/SimAFG_SVTemplate.lvlib/INSTANCENAME_eventError</Property>
 	<Property Name="varPersistentID:{88B1795D-7ECF-4D26-81A6-073B24776CC1}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage_CHANNEL2</Property>
-	<Property Name="varPersistentID:{916CB9ED-71B2-4D35-9CE3-090E6BFF470B}" Type="Ref"></Property>
 	<Property Name="varPersistentID:{99F28A82-802C-4C2A-8AA6-C488617A0F81}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage_CHANNEL7</Property>
-	<Property Name="varPersistentID:{A1B8C745-AF56-41C6-B293-C37FB682FF0E}" Type="Ref"></Property>
 	<Property Name="varPersistentID:{A41E7076-3CDE-4059-8069-BE77B9124175}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage_CHANNEL3</Property>
-	<Property Name="varPersistentID:{A9AAB277-EC72-42FA-834B-DB36332F7926}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{A9C4038B-FE0E-4BC5-913D-76E1870FF86D}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{AAAAFA56-E392-44D3-AB10-454024667C9E}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{B2B2A526-5551-4797-99B2-0E1E1D7C8717}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{BB73D186-296B-4DDF-9612-8EF18FD1E485}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{C20563DA-5693-4196-A7E6-893A067F93AE}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{C8D21F7D-5FBF-4837-84EB-E589F8FC0277}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{CBF39B87-BC82-4171-AD67-CCE40523E9EF}" Type="Ref"></Property>
 	<Property Name="varPersistentID:{CD0B5FE0-FB27-40DE-B334-2C7FD3722011}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage</Property>
-	<Property Name="varPersistentID:{D1354FCB-B00F-46D5-9817-D0F12124D5CC}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{DB866F0C-548A-417B-B116-3051CA5962F5}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{F02AF1FC-DD4B-4385-8648-FEF870B467F5}" Type="Ref"></Property>
-	<Property Name="varPersistentID:{F7340827-724D-40AC-9800-980D36D161CD}" Type="Ref"></Property>
 	<Property Name="varPersistentID:{FDA5A6A4-902E-4F5F-ADB7-5B871E22A047}" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/SimulationClasses/SimPowerSupply.lvlib/SimPowerSupply_SVTemplate.lvlib/INSTANCENAME_actVoltage_CHANNEL1</Property>
-	<Property Name="varPersistentID:{FE568E58-2BF9-4127-A8DD-D894430FBED1}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -428,7 +413,7 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
-				<Property Name="Bld_version.minor" Type="Int">31</Property>
+				<Property Name="Bld_version.minor" Type="Int">40</Property>
 				<Property Name="Destination[0].destName" Type="Str">CS.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../CSbinaries/CS_Main/CS.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -445,7 +430,7 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0D247232-E25A-4A2E-8EB0-A2546FE44343}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DECD05D5-DA63-4507-9CE9-3D74D6756B07}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/supportFiles/CS_process.mdb</Property>
@@ -568,7 +553,7 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="TgtF_companyName" Type="Str">GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">main system of CS</Property>
 				<Property Name="TgtF_internalName" Type="Str">CS</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
 				<Property Name="TgtF_productName" Type="Str">CS</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{225C6E92-15B5-4A31-8DA5-20C6CE43E083}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CS.exe</Property>
@@ -593,7 +578,7 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
-				<Property Name="Bld_version.minor" Type="Int">31</Property>
+				<Property Name="Bld_version.minor" Type="Int">40</Property>
 				<Property Name="Destination[0].destName" Type="Str">CS_DSCIntProc.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../CSbinaries/CS_DSCIntProc/CS_DSCIntProc.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -610,7 +595,7 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0D247232-E25A-4A2E-8EB0-A2546FE44343}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DECD05D5-DA63-4507-9CE9-3D74D6756B07}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/supportFiles/CS_process.mdb</Property>
@@ -733,7 +718,7 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="TgtF_companyName" Type="Str">GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">DSCIntProc</Property>
 				<Property Name="TgtF_internalName" Type="Str">CS</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 GSI Helmholtzzentrum für Schwerionenforschung GmbH</Property>
 				<Property Name="TgtF_productName" Type="Str">CS</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{BFFC9473-7387-4818-9B50-AB57CDD8DD76}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">CS_DSCIntProc.exe</Property>
