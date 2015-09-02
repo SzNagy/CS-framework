@@ -20,7 +20,16 @@ Gesellschaft für Schwerionenforschung, GSI
 Planckstr. 1, 64291 Darmstadt, Germany
 For all questions and ideas contact: D.Beck@gsi.de or H.Brand@gsi.de. 
 Last update: 22-MAY-2006</Property>
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -147,21 +156,21 @@ Last update: 22-MAY-2006</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0564A8CA-BFD9-465B-B484-5A937DDB511D}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">DMSClient.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/DMSClient.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/DMSClient.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/supportFiles/DMS.ICO</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0E68ADAF-0B8B-46E6-9ED8-D833B13A93DB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5ED23CF3-483A-4A29-B42F-4F1FF53A4FBE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DMSClient.lvlib/public/DMSC.main.vi</Property>
@@ -221,22 +230,22 @@ Last update: 22-MAY-2006</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F2032C87-A43B-4B72-A629-5FAAF360825E}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">DMSServer.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/DMSServer.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/DMSServer.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/supportFiles/DMS.ICO</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0E68ADAF-0B8B-46E6-9ED8-D833B13A93DB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5ED23CF3-483A-4A29-B42F-4F1FF53A4FBE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DMSServer.lvlib/public/DMSS.main.vi</Property>
@@ -286,22 +295,22 @@ Last update: 22-MAY-2006</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F9E378DC-B62B-4741-A9B5-F069D6B8DF44}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">DMSViewer.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/DMSViewer.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/DMSViewer.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/D/Git/CS-framework/CSbinaries/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/User/Brand/LVP/CSMain/CSbinaries/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/supportFiles/DMS.ICO</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0E68ADAF-0B8B-46E6-9ED8-D833B13A93DB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5ED23CF3-483A-4A29-B42F-4F1FF53A4FBE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DMSViewer.lvlib/public/DMSV.main.vi</Property>
