@@ -114,7 +114,7 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="CS.ico" Type="Document" URL="../CS.ico"/>
 				<Item Name="CS32_32.bmp" Type="Document" URL="../CS32_32.bmp"/>
 				<Item Name="CS_Start.rtm" Type="Document" URL="../CS_Start.rtm"/>
-				<Item Name="CSAS.ICO" Type="Document" URL="../CSClass/CSCore/CSAccessSystem/CSAS.ICO"/>
+				<Item Name="CSAS.ICO" Type="Document" URL="../CSClass/CS_Core/CSAccessSystem/CSAS.ICO"/>
 			</Item>
 			<Item Name="externalLibraries" Type="Folder">
 				<Item Name="UtilityLib.lvlib" Type="Library" URL="../CSlibraries/UtilityLib/UtilityLib.lvlib"/>
@@ -125,71 +125,73 @@ Last update: 20-Mar-2013</Property>
 			</Item>
 			<Item Name="CSMain" Type="Folder">
 				<Item Name="applicationBaseClasses" Type="Folder">
-					<Item Name="AFGBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/AFGBase/AFGBase.lvlib"/>
-					<Item Name="AFGBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/AFGBaseGUI/AFGBaseGUI.lvlib"/>
-					<Item Name="ControllerBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/ControllerBase/ControllerBase.lvlib"/>
-					<Item Name="DeviceBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/DeviceBase/DeviceBase.lvlib"/>
-					<Item Name="DeviceBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/DeviceBaseGUI/DeviceBaseGUI.lvlib"/>
-					<Item Name="DigiIOBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/DigiIOBase/DigiIOBase.lvlib"/>
-					<Item Name="DigiIOBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/DigiIOBaseGUI/DigiIOBaseGUI.lvlib"/>
-					<Item Name="MCSBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/MCSBase/MCSBase.lvlib"/>
-					<Item Name="MCSBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/MCSBaseGUI/MCSBaseGUI.lvlib"/>
-					<Item Name="MotorBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/MotorBase/MotorBase.lvlib"/>
-					<Item Name="MotorBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/MotorBaseGUI/MotorBaseGUI.lvlib"/>
-					<Item Name="PSChannelBase.lvlib" Type="Library" URL="../CSClass/CSCore/CSApplicationBaseClasses/PSChannelBase/PSChannelBase.lvlib"/>
-					<Item Name="PSChannelBaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGUserGUIs/PSChannelBaseGUI/PSChannelBaseGUI.lvlib"/>
-					<Item Name="CSApplicationBaseClasses.contents.vi" Type="VI" URL="../CSClass/CSCore/CSApplicationBaseClasses/CSApplicationBaseClasses.contents.vi"/>
+					<Item Name="AFGBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/AFGBase/AFGBase.lvlib"/>
+					<Item Name="AFGBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/AFGBaseGUI/AFGBaseGUI.lvlib"/>
+					<Item Name="ControllerBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/ControllerBase/ControllerBase.lvlib"/>
+					<Item Name="DeviceBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/DeviceBase/DeviceBase.lvlib"/>
+					<Item Name="DeviceBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/DeviceBaseGUI/DeviceBaseGUI.lvlib"/>
+					<Item Name="DigiIOBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/DigiIOBase/DigiIOBase.lvlib"/>
+					<Item Name="DigiIOBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/DigiIOBaseGUI/DigiIOBaseGUI.lvlib"/>
+					<Item Name="MCSBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/MCSBase/MCSBase.lvlib"/>
+					<Item Name="MCSBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/MCSBaseGUI/MCSBaseGUI.lvlib"/>
+					<Item Name="MotorBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/MotorBase/MotorBase.lvlib"/>
+					<Item Name="MotorBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/MotorBaseGUI/MotorBaseGUI.lvlib"/>
+					<Item Name="PSChannelBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/PSChannelBase/PSChannelBase.lvlib"/>
+					<Item Name="PSChannelBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/PSChannelBaseGUI/PSChannelBaseGUI.lvlib"/>
+					<Item Name="CSApplicationBaseClasses.contents.vi" Type="VI" URL="../CSClass/CS_Core/CSApplicationBaseClasses/CSApplicationBaseClasses.contents.vi"/>
 				</Item>
 				<Item Name="typedefs" Type="Folder">
 					<Item Name="CoreDefs" Type="Folder">
-						<Item Name="CoreDefs.call_type.ctl" Type="VI" URL="../CSClass/CSCore/CSSystem/CoreDefs/CoreDefs.call_type.ctl"/>
-						<Item Name="CoreDefs.error_severity.ctl" Type="VI" URL="../CSClass/CSCore/CSSystem/CoreDefs/CoreDefs.error_severity.ctl"/>
-						<Item Name="CoreDefs.error_type.ctl" Type="VI" URL="../CSClass/CSCore/CSSystem/CoreDefs/CoreDefs.error_type.ctl"/>
-						<Item Name="CoreDefs.rawDataType.ctl" Type="VI" URL="../CSClass/CSCore/CSSystem/CoreDefs/CoreDefs.rawDataType.ctl"/>
-						<Item Name="CoreDefs.remote_call_type.ctl" Type="VI" URL="../CSClass/CSCore/CSSystem/CoreDefs/CoreDefs.remote_call_type.ctl"/>
+						<Item Name="CoreDefs.call_type.ctl" Type="VI" URL="../CSClass/CS_Core/CSSystem/CoreDefs/CoreDefs.call_type.ctl"/>
+						<Item Name="CoreDefs.error_severity.ctl" Type="VI" URL="../CSClass/CS_Core/CSSystem/CoreDefs/CoreDefs.error_severity.ctl"/>
+						<Item Name="CoreDefs.error_type.ctl" Type="VI" URL="../CSClass/CS_Core/CSSystem/CoreDefs/CoreDefs.error_type.ctl"/>
+						<Item Name="CoreDefs.rawDataType.ctl" Type="VI" URL="../CSClass/CS_Core/CSSystem/CoreDefs/CoreDefs.rawDataType.ctl"/>
+						<Item Name="CoreDefs.remote_call_type.ctl" Type="VI" URL="../CSClass/CS_Core/CSSystem/CoreDefs/CoreDefs.remote_call_type.ctl"/>
 					</Item>
 				</Item>
 				<Item Name="libraries" Type="Folder">
-					<Item Name="CoreLib.lvlib" Type="Library" URL="../CSClass/CSCore/CSSystem/CoreLib/CoreLib.lvlib"/>
-					<Item Name="CSSystemLib.lvlib" Type="Library" URL="../CSClass/CSCore/CSSystem/CSSystemLib/CSSystemLib.lvlib"/>
-					<Item Name="CSAccessLib.lvlib" Type="Library" URL="../CSClass/CSCore/CSSystem/CSAccessLib/CSAccessLib.lvlib"/>
+					<Item Name="CoreLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSystem/CoreLib/CoreLib.lvlib"/>
+					<Item Name="CSSystemLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSystem/CSSystemLib/CSSystemLib.lvlib"/>
+					<Item Name="CSAccessLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSystem/CSAccessLib/CSAccessLib.lvlib"/>
 				</Item>
 				<Item Name="baseClasses" Type="Folder">
-					<Item Name="CSObj.lvlib" Type="Library" URL="../CSClass/CSCore/CSObj/CSObj.lvlib"/>
-					<Item Name="CAEObj.lvlib" Type="Library" URL="../CSClass/CSCore/CAEObj/CAEObj.lvlib"/>
-					<Item Name="BaseSM.lvlib" Type="Library" URL="../CSClass/CSCore/BaseSM/BaseSM.lvlib"/>
-					<Item Name="BaseGUI.lvlib" Type="Library" URL="../CSClass/CSCore/BaseGUI/BaseGUI.lvlib"/>
-					<Item Name="BaseProcess.lvlib" Type="Library" URL="../CSClass/CSCore/BaseProcess/BaseProcess.lvlib"/>
-					<Item Name="CSAccessClient.lvlib" Type="Library" URL="../CSClass/CSCore/CSAccessSystem/CSAccessClient/CSAccessClient.lvlib"/>
-					<Item Name="NotifierObj.lvlib" Type="Library" URL="../CSClass/CSCore/NotifierObj/NotifierObj.lvlib"/>
+					<Property Name="NI.SortType" Type="Int">0</Property>
+					<Item Name="BaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/BaseGUI/BaseGUI.lvlib"/>
+					<Item Name="BaseProcess.lvlib" Type="Library" URL="../CSClass/CS_Core/BaseProcess/BaseProcess.lvlib"/>
+					<Item Name="BaseSM.lvlib" Type="Library" URL="../CSClass/CS_Core/BaseSM/BaseSM.lvlib"/>
+					<Item Name="CAEObj.lvlib" Type="Library" URL="../CSClass/CS_Core/CAEObj/CAEObj.lvlib"/>
+					<Item Name="CSAccessClient.lvlib" Type="Library" URL="../CSClass/CS_Core/CSAccessSystem/CSAccessClient/CSAccessClient.lvlib"/>
+					<Item Name="CSObj.lvlib" Type="Library" URL="../CSClass/CS_Core/CSObj/CSObj.lvlib"/>
+					<Item Name="NotifierObj.lvlib" Type="Library" URL="../CSClass/CS_Core/NotifierObj/NotifierObj.lvlib"/>
 				</Item>
 				<Item Name="helperClasses" Type="Folder">
-					<Item Name="SuperProc.lvlib" Type="Library" URL="../CSClass/CSCore/SuperProc/SuperProc.lvlib"/>
-					<Item Name="ObjectInspector.lvlib" Type="Library" URL="../CSClass/CSCore/ObjectInspector/ObjectInspector.lvlib"/>
-					<Item Name="GeneralObjectGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GeneralObjectGUI/GeneralObjectGUI.lvlib"/>
-					<Item Name="GOGFrontPanel.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/GOGFrontPanel/GOGFrontPanel.lvlib"/>
-					<Item Name="CSAccessViewer.lvlib" Type="Library" URL="../CSClass/CSCore/CSAccessSystem/CSAccessViewer/CSAccessViewer.lvlib"/>
+					<Item Name="SuperProc.lvlib" Type="Library" URL="../CSClass/CS_Core/SuperProc/SuperProc.lvlib"/>
+					<Item Name="ObjectInspector.lvlib" Type="Library" URL="../CSClass/CS_Core/ObjectInspector/ObjectInspector.lvlib"/>
+					<Item Name="GeneralObjectGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GeneralObjectGUI/GeneralObjectGUI.lvlib"/>
+					<Item Name="GOGFrontPanel.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGFrontPanel/GOGFrontPanel.lvlib"/>
+					<Item Name="CSAccessViewer.lvlib" Type="Library" URL="../CSClass/CS_Core/CSAccessSystem/CSAccessViewer/CSAccessViewer.lvlib"/>
 				</Item>
 				<Item Name="contributedClasses" Type="Folder">
-					<Item Name="CSPopUpMsgBox.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/CSPopUpMsgBox/CSPopUpMsgBox.lvlib"/>
-					<Item Name="CSTimer.lvlib" Type="Library" URL="../CSClass/CSCore/CSTimer/CSTimer.lvlib"/>
-					<Item Name="DIMHistogramGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/DIMGUIs/DIMHistogramGUI/DIMHistogramGUI.lvlib"/>
-					<Item Name="DIMTrendGUI.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/DIMGUIs/DIMTrendGUI/DIMTrendGUI.lvlib"/>
-					<Item Name="DIMTableView.lvlib" Type="Library" URL="../CSClass/CSCore/GUIs/DIMGUIs/DIMTableView/DIMTableView.lvlib"/>
+					<Property Name="NI.SortType" Type="Int">0</Property>
+					<Item Name="CSPopUpMsgBox.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/CSPopUpMsgBox/CSPopUpMsgBox.lvlib"/>
+					<Item Name="CSTimer.lvlib" Type="Library" URL="../CSClass/CS_Core/CSTimer/CSTimer.lvlib"/>
+					<Item Name="DIMHistogramGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/DIMGUIs/DIMHistogramGUI/DIMHistogramGUI.lvlib"/>
+					<Item Name="DIMTableView.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/DIMGUIs/DIMTableView/DIMTableView.lvlib"/>
+					<Item Name="DIMTrendGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/DIMGUIs/DIMTrendGUI/DIMTrendGUI.lvlib"/>
 				</Item>
 				<Item Name="SimulationClasses" Type="Folder">
-					<Item Name="SimMCS.lvlib" Type="Library" URL="../CSClass/CSCore/CSSimulation/SimMCS/SimMCS.lvlib"/>
-					<Item Name="SimMotor.lvlib" Type="Library" URL="../CSClass/CSCore/CSSimulation/SimMotor/SimMotor.lvlib"/>
-					<Item Name="SimDigiIO.lvlib" Type="Library" URL="../CSClass/CSCore/CSSimulation/SimDigiIO/SimDigiIO.lvlib"/>
-					<Item Name="SimAFG.lvlib" Type="Library" URL="../CSClass/CSCore/CSSimulation/SimAFG/SimAFG.lvlib"/>
-					<Item Name="SimPowerSupply.lvlib" Type="Library" URL="../CSClass/CSCore/CSSimulation/SimPowerSupply/SimPowerSupply.lvlib"/>
+					<Item Name="SimMCS.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimMCS/SimMCS.lvlib"/>
+					<Item Name="SimMotor.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimMotor/SimMotor.lvlib"/>
+					<Item Name="SimDigiIO.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimDigiIO/SimDigiIO.lvlib"/>
+					<Item Name="SimAFG.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimAFG/SimAFG.lvlib"/>
+					<Item Name="SimPowerSupply.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimPowerSupply/SimPowerSupply.lvlib"/>
 				</Item>
 				<Item Name="utilities" Type="Folder">
 					<Item Name="CSClassUtilities.TestClass.vi" Type="VI" URL="../CSUtilities/CSClassUtilities.TestClass.vi"/>
 					<Item Name="CSClassUtilities.InheritClass.vi" Type="VI" URL="../CSUtilities/CSClassUtilities.InheritClass.vi"/>
 					<Item Name="CSClassUtilities.CopyAndRenameClass.vi" Type="VI" URL="../CSUtilities/CSClassUtilities.CopyAndRenameClass.vi"/>
 					<Item Name="CSClassUtilities.LV2012MigrateClass.vi" Type="VI" URL="../CSUtilities/CSClassUtilities.LV2012MigrateClass.vi"/>
-					<Item Name="CSAccessServer.lvlib" Type="Library" URL="../CSClass/CSCore/CSAccessSystem/CSAccessServer/CSAccessServer.lvlib"/>
+					<Item Name="CSAccessServer.lvlib" Type="Library" URL="../CSClass/CS_Core/CSAccessSystem/CSAccessServer/CSAccessServer.lvlib"/>
 				</Item>
 				<Item Name="CS_Contents_Main.vi" Type="VI" URL="../CS_Contents_Main.vi"/>
 			</Item>
@@ -198,8 +200,8 @@ Last update: 20-Mar-2013</Property>
 		</Item>
 		<Item Name="myStuff" Type="Folder">
 			<Item Name="otherStuff" Type="Folder">
-				<Item Name="DSCIntProc.lvlib" Type="Library" URL="../CSClass/CSCore/CSScada/DSCIntProc/DSCIntProc.lvlib"/>
-				<Item Name="DSCIntLib.lvlib" Type="Library" URL="../CSClass/CSCore/CSScada/DSCIntLib/DSCIntLib.lvlib"/>
+				<Item Name="DSCIntProc.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntProc/DSCIntProc.lvlib"/>
+				<Item Name="DSCIntLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntLib/DSCIntLib.lvlib"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder"/>
 			<Item Name="deviceClasses" Type="Folder"/>
@@ -214,7 +216,6 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
 				<Item Name="Semaphore RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore RefNum"/>
-				<Item Name="Get Semaphore Status.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Get Semaphore Status.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -278,6 +279,9 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="Get Semaphore Status.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Get Semaphore Status.vi"/>
 				<Item Name="Read From XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File.vi"/>
 				<Item Name="Read From XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(array).vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
@@ -295,7 +299,6 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="Read Characters From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Characters From File.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
@@ -306,7 +309,6 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
 				<Item Name="compatWriteText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatWriteText.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="NI_DSC.lvlib" Type="Library" URL="/&lt;vilib&gt;/lvdsc/NI_DSC.lvlib"/>
 				<Item Name="PRC_DeleteProc.vi" Type="VI" URL="/&lt;vilib&gt;/lvdsc/process/internal/PRC_DeleteProc.vi"/>
 				<Item Name="dscProc.dll" Type="Document" URL="/&lt;vilib&gt;/lvdsc/process/dscProc.dll"/>
@@ -375,7 +377,6 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="libc-2.10.1.so" Type="Document" URL="/lib/libc-2.10.1.so"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="SCT Get LVRTPath.vi" Type="VI" URL="/&lt;resource&gt;/dialog/variable/SCT Get LVRTPath.vi"/>
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -392,6 +393,7 @@ Last update: 20-Mar-2013</Property>
 			<Item Name="nitaglv.dll" Type="Document" URL="nitaglv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CS_Main" Type="EXE">
@@ -435,11 +437,11 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/supportFiles/CS_process.mdb</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/libraries/CSAccessLib.lvlib</Property>
+				<Property Name="Source[10].itemID" Type="Ref"></Property>
 				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CSObj.lvlib</Property>
+				<Property Name="Source[11].itemID" Type="Ref"></Property>
 				<Property Name="Source[11].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[11].type" Type="Str">Library</Property>
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CSObj.lvlib/private/CSObj.i attribute.vi</Property>
@@ -448,7 +450,7 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Source[12].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CAEObj.lvlib</Property>
+				<Property Name="Source[13].itemID" Type="Ref"></Property>
 				<Property Name="Source[13].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[13].type" Type="Str">Library</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
@@ -456,11 +458,11 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Source[14].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[14].type" Type="Str">Library</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/BaseGUI.lvlib</Property>
+				<Property Name="Source[15].itemID" Type="Ref"></Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/BaseProcess.lvlib</Property>
+				<Property Name="Source[16].itemID" Type="Ref"></Property>
 				<Property Name="Source[16].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[16].type" Type="Str">Library</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
@@ -546,7 +548,7 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="Source[8].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/libraries/CSSystemLib.lvlib</Property>
+				<Property Name="Source[9].itemID" Type="Ref"></Property>
 				<Property Name="Source[9].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">32</Property>
@@ -600,11 +602,11 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/supportFiles/CS_process.mdb</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/libraries/CSAccessLib.lvlib</Property>
+				<Property Name="Source[10].itemID" Type="Ref"></Property>
 				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CSObj.lvlib</Property>
+				<Property Name="Source[11].itemID" Type="Ref"></Property>
 				<Property Name="Source[11].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[11].type" Type="Str">Library</Property>
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CSObj.lvlib/private/CSObj.i attribute.vi</Property>
@@ -613,7 +615,7 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Source[12].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/CAEObj.lvlib</Property>
+				<Property Name="Source[13].itemID" Type="Ref"></Property>
 				<Property Name="Source[13].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[13].type" Type="Str">Library</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
@@ -621,11 +623,11 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Source[14].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[14].type" Type="Str">Library</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/BaseGUI.lvlib</Property>
+				<Property Name="Source[15].itemID" Type="Ref"></Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/baseClasses/BaseProcess.lvlib</Property>
+				<Property Name="Source[16].itemID" Type="Ref"></Property>
 				<Property Name="Source[16].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[16].type" Type="Str">Library</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
@@ -711,7 +713,7 @@ DSC or DSC RT has to be installed on the target PC</Property>
 				<Property Name="Source[8].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/CSMainAndLibs_DontTouch/CSMain/libraries/CSSystemLib.lvlib</Property>
+				<Property Name="Source[9].itemID" Type="Ref"></Property>
 				<Property Name="Source[9].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">32</Property>
