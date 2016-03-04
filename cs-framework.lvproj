@@ -122,6 +122,7 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="LVNodeInfo.lvlib" Type="Library" URL="../CSlibraries-extern/DimLVEvent/NodeMon-LV/LVNodeInfo/LVNodeInfo.lvlib"/>
 				<Item Name="DimIndicators.lvlib" Type="Library" URL="../CSlibraries-extern/DimLVEvent/DimIndicators/DimIndicators.lvlib"/>
 				<Item Name="CS SQL Server.lvlib" Type="Library" URL="../CSTools/CS SQL Server/CS SQL Server.lvlib"/>
+				<Item Name="GUILib.lvlib" Type="Library" URL="../CSlibraries/GUILib/GUILib.lvlib"/>
 			</Item>
 			<Item Name="CSMain" Type="Folder">
 				<Item Name="applicationBaseClasses" Type="Folder">
@@ -170,6 +171,7 @@ Last update: 20-Mar-2013</Property>
 					<Item Name="GeneralObjectGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GeneralObjectGUI/GeneralObjectGUI.lvlib"/>
 					<Item Name="GOGFrontPanel.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGFrontPanel/GOGFrontPanel.lvlib"/>
 					<Item Name="CSAccessViewer.lvlib" Type="Library" URL="../CSClass/CS_Core/CSAccessSystem/CSAccessViewer/CSAccessViewer.lvlib"/>
+					<Item Name="GOGControllerGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGControllerGUI/GOGControllerGUI.lvlib"/>
 				</Item>
 				<Item Name="contributedClasses" Type="Folder">
 					<Property Name="NI.SortType" Type="Int">0</Property>
