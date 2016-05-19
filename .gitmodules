@@ -7,3 +7,15 @@
 	path = CSClass/CS_Core
 
 	url = https://github.com/DN-GSI/CS_Core.git
+[submodule "CSClass/CS_Lebit"]
+	path = CSClass/CS_Lebit
+	url = https://github.com/DN-GSI/CS_Lebit.git
+[submodule "CSClass/CS_Acquisition"]
+	path = CSClass/CS_Acquisition
+	url = https://github.com/DN-GSI/CS_Acquisition.git
+[submodule "instr.lib/SR430"]
+	path = instr.lib/SR430
+	url = https://github.com/DN-GSI/SR430.git
+[submodule "CSClass/CS_DigitalIO"]
+	path = CSClass/CS_DigitalIO
+	url = https://github.com/DN-GSI/CS_DigitalIO.git

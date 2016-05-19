@@ -205,9 +205,24 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="DSCIntProc.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntProc/DSCIntProc.lvlib"/>
 				<Item Name="DSCIntLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntLib/DSCIntLib.lvlib"/>
 			</Item>
-			<Item Name="instr.lib" Type="Folder"/>
-			<Item Name="deviceClasses" Type="Folder"/>
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="SR430Driver.lvlib" Type="Library" URL="../instr.lib/SR430/SR430Driver.lvlib"/>
+			</Item>
+			<Item Name="deviceClasses" Type="Folder">
+				<Item Name="SR430.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/SR430/SR430.lvlib"/>
+				<Item Name="NIFPGA-MCS.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/NIFPGA-MCS/NIFPGA-MCS.lvlib"/>
+				<Item Name="PPG_ABC.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/PPG_ABC/PPG_ABC.lvlib"/>
+			</Item>
 			<Item Name="GUIClasses" Type="Folder"/>
+			<Item Name="MM6" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="DataLib.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/DataLib/DataLib.lvlib"/>
+				<Item Name="DiscArchiver.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/DiscArchiver/DiscArchiver.lvlib"/>
+				<Item Name="LEBITDefs.lvlib" Type="Library" URL="../CSClass/CS_Lebit/LEBITDefs/LEBITDefs.lvlib"/>
+				<Item Name="LEBITLib.lvlib" Type="Library" URL="../CSClass/CS_Lebit/LEBITLib/LEBITLib.lvlib"/>
+				<Item Name="MM6.lvlib" Type="Library" URL="../CSClass/CS_Lebit/MM6/MM6.lvlib"/>
+				<Item Name="MM6Archiver.lvlib" Type="Library" URL="../CSClass/CS_Lebit/MM6Archiver/MM6Archiver.lvlib"/>
+			</Item>
 			<Item Name="CS_Contents_User.vi" Type="VI" URL="../CS_Contents_User.vi"/>
 			<Item Name="CS_Contents_DSCIntProc.vi" Type="VI" URL="../CS_Contents_DSCIntProc.vi"/>
 		</Item>
@@ -396,6 +411,38 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="fpga_vi_ref.ctl" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/fpga_vi_ref.ctl"/>
+			<Item Name="initialize.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/initialize.vi"/>
+			<Item Name="getNumberOfScans.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/getNumberOfScans.vi"/>
+			<Item Name="getNumberOfBins.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/getNumberOfBins.vi"/>
+			<Item Name="getBinWidth.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/getBinWidth.vi"/>
+			<Item Name="setTriggerMode.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/setTriggerMode.vi"/>
+			<Item Name="reset.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/reset.vi"/>
+			<Item Name="close.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/close.vi"/>
+			<Item Name="waitForData.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/waitForData.vi"/>
+			<Item Name="target.state.ctl" Type="VI" URL="../instr.lib/NI-FPGA-MCS/target/target.state.ctl"/>
+			<Item Name="getStatus.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/getStatus.vi"/>
+			<Item Name="get library version.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/get library version.vi"/>
+			<Item Name="startAcquisition.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/startAcquisition.vi"/>
+			<Item Name="stopAcquisition.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/stopAcquisition.vi"/>
+			<Item Name="setNumberOfBins.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/setNumberOfBins.vi"/>
+			<Item Name="setBinWidth.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/setBinWidth.vi"/>
+			<Item Name="setNumberOfScans.vi" Type="VI" URL="../instr.lib/NI-FPGA-MCS/host/instrumentDriver/setNumberOfScans.vi"/>
+			<Item Name="NI_FPGA_PPG.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/NI_FPGA_PPG/NI_FPGA_PPG.lvlib"/>
+			<Item Name="FPGA-PPG_close.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_close.vi"/>
+			<Item Name="FPGA-PPG_query_mode.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_mode.vi"/>
+			<Item Name="FPGA-PPG_query_status.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_status.vi"/>
+			<Item Name="FPGA-PPG_query_revision.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_revision.vi"/>
+			<Item Name="FPGA-PPG_load.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load.vi"/>
+			<Item Name="FPGA-PPG_load_command.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load_command.vi"/>
+			<Item Name="FPGA-PPG_load_file.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load_file.vi"/>
+			<Item Name="FPGA-PPG_reset.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_reset.vi"/>
+			<Item Name="FPGA-PPG_set_mode.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_set_mode.vi"/>
+			<Item Name="FPGA-PPG_query_command.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_command.vi"/>
+			<Item Name="FPGA-PPG_start.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_start.vi"/>
+			<Item Name="FPGA-PPG_stop.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_stop.vi"/>
+			<Item Name="FPGA-PPG_query_clock_rate.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_clock_rate.vi"/>
+			<Item Name="FPGA-PPG_initialise.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_initialise.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CS_Main" Type="EXE">
