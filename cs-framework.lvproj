@@ -137,6 +137,8 @@ Last update: 20-Mar-2013</Property>
 					<Item Name="MCSBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/MCSBaseGUI/MCSBaseGUI.lvlib"/>
 					<Item Name="MotorBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/MotorBase/MotorBase.lvlib"/>
 					<Item Name="MotorBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/MotorBaseGUI/MotorBaseGUI.lvlib"/>
+					<Item Name="NABase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/NABase/NABase.lvlib"/>
+					<Item Name="NABaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/NABaseGUI/NABaseGUI.lvlib"/>
 					<Item Name="PSChannelBase.lvlib" Type="Library" URL="../CSClass/CS_Core/CSApplicationBaseClasses/PSChannelBase/PSChannelBase.lvlib"/>
 					<Item Name="PSChannelBaseGUI.lvlib" Type="Library" URL="../CSClass/CS_Core/GUIs/GOGUserGUIs/PSChannelBaseGUI/PSChannelBaseGUI.lvlib"/>
 					<Item Name="CSApplicationBaseClasses.contents.vi" Type="VI" URL="../CSClass/CS_Core/CSApplicationBaseClasses/CSApplicationBaseClasses.contents.vi"/>
@@ -204,16 +206,22 @@ Last update: 20-Mar-2013</Property>
 			<Item Name="otherStuff" Type="Folder">
 				<Item Name="DSCIntProc.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntProc/DSCIntProc.lvlib"/>
 				<Item Name="DSCIntLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntLib/DSCIntLib.lvlib"/>
+				<Item Name="EventBuilder.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/EventBuilder/EventBuilder.lvlib"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="SR430Driver.lvlib" Type="Library" URL="../instr.lib/SR430/SR430Driver.lvlib"/>
+				<Item Name="Stanford Research SR1.lvlib" Type="Library" URL="../instr.lib/Stanford Research SR1/Stanford Research SR1.lvlib"/>
 			</Item>
 			<Item Name="deviceClasses" Type="Folder">
-				<Item Name="SR430.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/SR430/SR430.lvlib"/>
+				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="NIFPGA-MCS.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/NIFPGA-MCS/NIFPGA-MCS.lvlib"/>
 				<Item Name="PPG_ABC.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/PPG_ABC/PPG_ABC.lvlib"/>
+				<Item Name="SR1.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/SR1/SR1.lvlib"/>
+				<Item Name="SR430.lvlib" Type="Library" URL="../CSClass/CS_Acquisition/SR430/SR430.lvlib"/>
 			</Item>
-			<Item Name="GUIClasses" Type="Folder"/>
+			<Item Name="GUIClasses" Type="Folder">
+				<Item Name="PPG_ABCGUI.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/PPG_ABCGUI/PPG_ABCGUI.lvlib"/>
+			</Item>
 			<Item Name="MM6" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="DataLib.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/DataLib/DataLib.lvlib"/>
@@ -443,6 +451,9 @@ Last update: 20-Mar-2013</Property>
 			<Item Name="FPGA-PPG_stop.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_stop.vi"/>
 			<Item Name="FPGA-PPG_query_clock_rate.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_clock_rate.vi"/>
 			<Item Name="FPGA-PPG_initialise.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_initialise.vi"/>
+			<Item Name="PRIVATE.i attribute.vi" Type="VI" URL="../CSClass/CS_Acquisition/SR1/inheritance/PRIVATE.i attribute.vi"/>
+			<Item Name="PRIVATE.ProcEvents.vi" Type="VI" URL="../CSClass/CS_Acquisition/SR1/inheritance/PRIVATE.ProcEvents.vi"/>
+			<Item Name="PROTECTED.get i attribute.vi" Type="VI" URL="../CSClass/CS_Acquisition/SR1/inheritance/PROTECTED.get i attribute.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CS_Main" Type="EXE">

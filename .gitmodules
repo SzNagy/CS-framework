@@ -19,3 +19,6 @@
 [submodule "CSClass/CS_DigitalIO"]
 	path = CSClass/CS_DigitalIO
 	url = https://github.com/DN-GSI/CS_DigitalIO.git
+[submodule "instr.lib/Stanford Research SR1"]
+	path = instr.lib/Stanford Research SR1
+	url = https://github.com/DN-GSI/Stanford-Research-SR1.git
