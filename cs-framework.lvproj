@@ -189,6 +189,7 @@ Last update: 20-Mar-2013</Property>
 					<Item Name="SimDigiIO.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimDigiIO/SimDigiIO.lvlib"/>
 					<Item Name="SimAFG.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimAFG/SimAFG.lvlib"/>
 					<Item Name="SimPowerSupply.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimPowerSupply/SimPowerSupply.lvlib"/>
+					<Item Name="SimPPG2.lvlib" Type="Library" URL="../CSClass/CS_Core/CSSimulation/SimPPG2/SimPPG2.lvlib"/>
 				</Item>
 				<Item Name="utilities" Type="Folder">
 					<Item Name="CSClassUtilities.TestClass.vi" Type="VI" URL="../CSUtilities/CSClassUtilities.TestClass.vi"/>
