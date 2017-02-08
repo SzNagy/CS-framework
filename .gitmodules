@@ -7,3 +7,30 @@
 	path = CSClass/CS_Core
 
 	url = https://github.com/DN-GSI/CS_Core.git
+[submodule "CSClass/CS_DigitalIO"]
+	path = CSClass/CS_DigitalIO
+	url = https://github.com/DN-GSI/CS_DigitalIO.git
+[submodule "instr.lib/NI-FPGA-PPG"]
+	path = instr.lib/NI-FPGA-PPG
+	url = https://github.com/DN-GSI/NI-FPGA-PPG.git
+[submodule "CSClass/CS_Acquisition"]
+	path = CSClass/CS_Acquisition
+	url = https://github.com/DN-GSI/CS_Acquisition.git
+[submodule "CSClass/CS_Afg"]
+	path = CSClass/CS_Afg
+	url = https://github.com/DN-GSI/CS_Afg.git
+[submodule "CSClass/CS_Lebit"]
+	path = CSClass/CS_Lebit
+	url = https://github.com/DN-GSI/CS_Lebit.git
+[submodule "CSClass/CS_PowerSupply"]
+	path = CSClass/CS_PowerSupply
+	url = https://github.com/DN-GSI/CS_PowerSupply.git
+[submodule "instr.lib/SR430"]
+	path = instr.lib/SR430
+	url = https://github.com/DN-GSI/SR430.git
+[submodule "instr.lib/SDEX"]
+	path = instr.lib/SDEX
+	url = https://github.com/DN-GSI/SDEX.git
+[submodule "instr.lib/hvSwitch2"]
+	path = instr.lib/hvSwitch2
+	url = https://github.com/DN-GSI/hvSwitch2.git
