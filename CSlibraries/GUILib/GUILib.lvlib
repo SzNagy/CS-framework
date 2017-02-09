@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="14008000">
+<Library LVVersion="15008000">
 	<Property Name="Alarm Database Computer" Type="Str">localhost</Property>
 	<Property Name="Alarm Database Name" Type="Str">E__Program_Files_National_Instruments_LabVIEW_8_2_data</Property>
 	<Property Name="Alarm Database Path" Type="Str">E:\Program Files\National Instruments\LabVIEW 8.2\data</Property>
@@ -37,12 +37,12 @@ INFO2SF
 
 </Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*0!!!*Q(C=\&gt;3R=&gt;N!%)8B*Y]$J_T!AR;7*&lt;!&amp;NL!N-*5CQ;(#H8(A1=A3T";W"1:KA#W=@BS7EGS.S51?/R#AI]"XB\U0Q"&amp;3X\Z)H^7O&lt;?O,W^,@B]V(L?`L_DTXPS4NO?@X`D@HHSMP0;W^L&gt;`_80`8`P6S(;6MP&gt;&lt;L_B?P\^KGC^N(`U@`P_W`PHRPLS`SP\N*.VV+3VL1H'&lt;^[FK3*XG3*XG3*XG1"XG1"XG1"\G4/\G4/\G4/\G2'\G2'\G2'XH@S55O=J&amp;T6Z,*EYG3IEG":$!5*2_**`%EHM4$6S7?R*.Y%E`C99A34_**0)EH]8#;%E`C34S**`&amp;1KEOS\_2Y%A`F&amp;8A#4_!*0)'(+26Y!E!Q76!Y+!*$17&gt;Q%(A#4_$B5)%H]!3?Q".Y[&amp;&lt;A#4S"*`!%(E\J&gt;S7[:N\*]6"'DM@R/"\(YXAI,=@D?"S0YX%]4#@(YXA=B$/B5RS#H*/=!=Y8R_.Y_#@(YXA=D_.R0(4V*_4^TMS;?3@(9XA-D_%R0);(%D)]BM@Q'"\$1VE:(M.D?!S0Y7%K'2\$9XA-C$%JU]MI:JRI$$)#Q].@8SX7HV*UC@7^@JL,1F5N1.8#5CU9V5*107$6AV-^%.7.6NV!V9V28&lt;$K1F2!V=3KAKK"/P&amp;ZJ"VI?^J)W^'WN!VNI+XG5^^ZY/FUUP&amp;YV/&amp;QU([`VTC/WOVWWG[XWGQW'I:"K^8K_7XVF8X:&lt;M\PJ6O/\Y@J&lt;JR_X)X$^0BNGBZ'WPXXHY^TXXH-?\@FP@1`P"PV3?X6;ZZ\^!4WY9-1!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*0!!!*Q(C=\&gt;3R=&gt;N!%)8B*Y]$J_T!AR;7*&lt;!&amp;NL!N-*5CQ;(#H8(A1=A3T";W"1:KA#W=@BS7EGS.S51?/R#AI]"XB\U0Q"&amp;3X\Z)H^7O&lt;?O,W^,@B]V(L?`L_DTXPS4NO?@X`D@HHSMP0;W^L&gt;`_80`8`P6S(;6MP&gt;&lt;L_B?P\^KGC^N(`U@`P_W`PHRPLS`SP\N*.VV+3VL1H'&lt;^[FK3*XG3*XG3*XG1"XG1"XG1"\G4/\G4/\G4/\G2'\G2'\G2'XH@S55O=J&amp;T6Z,*EYG3IEG":$!5*2_**`%EHM4$6S7?R*.Y%E`C99A34_**0)EH]8#;%E`C34S**`&amp;1KEOS\_2Y%A`F&amp;8A#4_!*0)'(+26Y!E!Q76!Y+!*$17&gt;Q%(A#4_$B5)%H]!3?Q".Y[&amp;&lt;A#4S"*`!%(E\J&gt;S7[:N\*]6"'DM@R/"\(YXAI,=@D?"S0YX%]4#@(YXA=B$/B5RS#H*/=!=Y8R_.Y_#@(YXA=D_.R0(4V*_4^TMS;?3@(9XA-D_%R0);(%D)]BM@Q'"\$1VE:(M.D?!S0Y7%K'2\$9XA-C$%JU]MI:JRI$$)#Q].@8SX7HV*UC@7^@JL,1F5N1.8#5CU9V5*107$6AV-^%.7.6NV!V9V28&lt;$K1F2!V=3KAKK"/P&amp;ZJ"VI?^J)W^'WN!VNI+XG5^^ZY/FUUP&amp;YV/&amp;QU([`VTC/WOVWWG[XWGQW'I:"K^8K_7XVF8X:&lt;M\PJ6O/\Y@J&lt;JR_X)X$^0BNGBZ'WPXXHY^TXXH-?\@FP@1`P"PV3?X6;ZZ\^!4WY9-1!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">352354304</Property>
 	<Property Name="NI.Lib.Version" Type="Str">0.2.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
-	<Property Name="Serialized ACL" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
+	<Property Name="Serialized ACL" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="typedefs" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>

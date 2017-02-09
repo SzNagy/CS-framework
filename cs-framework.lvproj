@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="15008000">
 	<Property Name="CCSymbols" Type="Str">ActualBuild,Default;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str">cs-framework - a multi-threaded, event driven, object oriented and distributed framework with SCADA functionality. See http://wiki.gsi.de/cgi-bin/view/CSframework/WebHome for more information.
@@ -23,6 +23,7 @@ If not, see &lt;http://www.gnu.org/licenses/&gt;.
 
 For all questions and ideas contact: d.neidherr@gsi.de or h.brand@gsi.de
 Last update: 20-Mar-2013</Property>
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Property Name="utf.calculate.project.code.coverage" Type="Bool">false</Property>
 	<Property Name="utf.create.arraybrackets" Type="Str">[]</Property>
 	<Property Name="utf.create.arraythreshold" Type="UInt">100</Property>
@@ -90,6 +91,7 @@ Last update: 20-Mar-2013</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
 		<Property Name="IOScan.Period" Type="UInt">10000</Property>
 		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
@@ -205,9 +207,19 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="DSCIntProc.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntProc/DSCIntProc.lvlib"/>
 				<Item Name="DSCIntLib.lvlib" Type="Library" URL="../CSClass/CS_Core/CSScada/DSCIntLib/DSCIntLib.lvlib"/>
 			</Item>
-			<Item Name="instr.lib" Type="Folder"/>
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="SR430Driver.lvlib" Type="Library" URL="../instr.lib/SR430/SR430Driver.lvlib"/>
+				<Item Name="SDEXDriver.lvlib" Type="Library" URL="../instr.lib/SDEX/SDEXDriver.lvlib"/>
+				<Item Name="HVSwitch2Driver.lvlib" Type="Library" URL="../instr.lib/hvSwitch2/HVSwitch2Driver.lvlib"/>
+			</Item>
 			<Item Name="deviceClasses" Type="Folder"/>
 			<Item Name="GUIClasses" Type="Folder"/>
+			<Item Name="MM6Stuff" Type="Folder">
+				<Item Name="MM6.lvlib" Type="Library" URL="../CSClass/CS_Lebit/MM6/MM6.lvlib"/>
+				<Item Name="MM6Archiver.lvlib" Type="Library" URL="../CSClass/CS_Lebit/MM6Archiver/MM6Archiver.lvlib"/>
+				<Item Name="DiscArchiver.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/DiscArchiver/DiscArchiver.lvlib"/>
+				<Item Name="EventBuilder.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/EventBuilder/EventBuilder.lvlib"/>
+			</Item>
 			<Item Name="CS_Contents_User.vi" Type="VI" URL="../CS_Contents_User.vi"/>
 			<Item Name="CS_Contents_DSCIntProc.vi" Type="VI" URL="../CS_Contents_DSCIntProc.vi"/>
 		</Item>
@@ -374,6 +386,12 @@ Last update: 20-Mar-2013</Property>
 				<Item Name="NET_tagURLdecode.vi" Type="VI" URL="/&lt;vilib&gt;/lvdsc/common/net/NET_tagURLdecode.vi"/>
 				<Item Name="PRC_Undeploy.vi" Type="VI" URL="/&lt;vilib&gt;/lvdsc/process/internal/PRC_Undeploy.vi"/>
 				<Item Name="PRC_GetProcRunState.vi" Type="VI" URL="/&lt;vilib&gt;/lvdsc/process/internal/PRC_GetProcRunState.vi"/>
+				<Item Name="niLvFpga_Open_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_Open_PCI-7811R.vi"/>
+				<Item Name="niLvFpga_Close_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_Close_PCI-7811R.vi"/>
+				<Item Name="niLvFpga_WriteFifo_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_WriteFifo_PCI-7811R.vi"/>
+				<Item Name="niLvFpga_ReadFifo_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_ReadFifo_PCI-7811R.vi"/>
+				<Item Name="niLvFpga_Download_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_Download_PCI-7811R.vi"/>
+				<Item Name="niLvFpga_Run_PCI-7811R.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/PCI-7811R/niLvFpga_Run_PCI-7811R.vi"/>
 			</Item>
 			<Item Name="wsock32.dll" Type="Document" URL="wsock32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -396,6 +414,38 @@ Last update: 20-Mar-2013</Property>
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="LEBITDefs.lvlib" Type="Library" URL="../CSClass/CS_Lebit/LEBITDefs/LEBITDefs.lvlib"/>
+			<Item Name="PPG_ABC.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/PPG_ABC/PPG_ABC.lvlib"/>
+			<Item Name="NI_FPGA_PPG.lvlib" Type="Library" URL="../CSClass/CS_DigitalIO/NI_FPGA_PPG/NI_FPGA_PPG.lvlib"/>
+			<Item Name="FPGA-PPG_close.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_close.vi"/>
+			<Item Name="FPGA_PPG_action_type.ctl" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA_PPG_action_type.ctl"/>
+			<Item Name="FPGA-PPG_query_error.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_error.vi"/>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="FPGA_PPG_error_type.ctl" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA_PPG_error_type.ctl"/>
+			<Item Name="FPGA-PPG_resource_handler.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_resource_handler.vi"/>
+			<Item Name="FPGA_PPG_vi_ref.ctl" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA_PPG_vi_ref.ctl"/>
+			<Item Name="NI-FPGA-PPG.lvproj_PCI-7811R_FPGA_target_main.vi.lvbitx" Type="Document" URL="../instr.lib/NI-FPGA-PPG/FPGA Bitfiles/NI-FPGA-PPG.lvproj_PCI-7811R_FPGA_target_main.vi.lvbitx"/>
+			<Item Name="FPGA-PPG_query_mode.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_mode.vi"/>
+			<Item Name="FPGA-PPG_query_status.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_status.vi"/>
+			<Item Name="FPGA_target_state_type.ctl" Type="VI" URL="../instr.lib/NI-FPGA-PPG/target/FPGA_target_state_type.ctl"/>
+			<Item Name="FPGA-PPG_query_revision.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_revision.vi"/>
+			<Item Name="FPGA-PPG_load.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load.vi"/>
+			<Item Name="FPGA-PPG_load_command.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load_command.vi"/>
+			<Item Name="FPGA-PPG_load_file.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_load_file.vi"/>
+			<Item Name="FPGA-PPG_read_file.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_read_file.vi"/>
+			<Item Name="FPGA-PPG_check_file_syntax.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_check_file_syntax.vi"/>
+			<Item Name="FPGA-PPG_reset.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_reset.vi"/>
+			<Item Name="FPGA-PPG_set_mode.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_set_mode.vi"/>
+			<Item Name="FPGA-PPG_query_command.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_command.vi"/>
+			<Item Name="FPGA-PPG_start.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_start.vi"/>
+			<Item Name="FPGA-PPG_stop.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_stop.vi"/>
+			<Item Name="FPGA-PPG_query_clock_rate.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_query_clock_rate.vi"/>
+			<Item Name="FPGA-PPG_initialise.vi" Type="VI" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/FPGA-PPG_initialise.vi"/>
+			<Item Name="LEBITLib.lvlib" Type="Library" URL="../CSClass/CS_Lebit/LEBITLib/LEBITLib.lvlib"/>
+			<Item Name="DataLib.lvlib" Type="Library" URL="../CSClass/CS_Lebit/CSData/DataLib/DataLib.lvlib"/>
+			<Item Name="NI-FPGA-PPG_Driver.lvlib" Type="Library" URL="../instr.lib/NI-FPGA-PPG/host/instrumentDriver/NI-FPGA-PPG_Driver.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="CS_Main" Type="EXE">
